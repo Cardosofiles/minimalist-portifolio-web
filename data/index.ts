@@ -97,7 +97,7 @@ export const projects = [
   {
     id: 4,
     title: "Jogo da Memória",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "Criado com HTML, CSS e JavaScript, afim de Praticar a Lógica de Programação",
     img: "/memory-game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://memorygamecardosofiles.netlify.app/",
