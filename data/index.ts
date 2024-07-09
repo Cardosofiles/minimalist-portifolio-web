@@ -107,14 +107,14 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "O curso de bacharelado em Ciência da Computação forma profissionais capacitados para desenvolver aplicações científicas e tecnológicas, usando Matemática e Lógica. Com uma formação científica e técnica abrangente, o curso visa ao desenvolvimento pessoal e à criação de novas tecnologias, atendendo às demandas do mercado e da comunidade científica.",
+      "O curso de bacharelado em Ciência da Computação me capacitará profissionalmente para desenvolver aplicações científicas e tecnológicas, usando Matemática e Lógica. Com a formação científica e técnica abrangente, o curso visa ao desenvolvimento pessoal e à criação de novas tecnologias, atendendo às demandas do mercado e da comunidade científica.",
     name: "Ciência da Computação",
     title: "Unitri - Centro Universitário do Triângulo",
     image: "/unitri.jpeg",
   },
   {
     quote:
-      "O curso de Full Stack JavaScript da OneBitCode oferece uma imersão completa nas tecnologias mais utilizadas no desenvolvimento web moderno. Ao longo do curso, você adquirirá habilidades práticas em diversas linguagens e frameworks essenciais, como HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Next.js, Node.js, APIs, MongoDB, SQL, PostgreSQL e Figma, tornando-se um desenvolvedor full stack competente.",
+      "O curso de Full Stack JavaScript da OneBitCode tem uma imersão completa nas tecnologias mais utilizadas no desenvolvimento web moderno. Ao longo do curso, adquiriri habilidades práticas em diversas linguagens e frameworks essenciais, como HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Next.js, Node.js, APIs, MongoDB, SQL, PostgreSQL e Figma, tornando-se um desenvolvedor full stack competente.",
     name: "Full Stack JavaScript",
     title: "OneBitCode",
     image: "/oneBitCode.jpg",
