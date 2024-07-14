@@ -1,5 +1,6 @@
 import { workExperience } from "@/data";
 import Link from "next/link";
+import { FaLocationArrow } from "react-icons/fa";
 import { Button } from "./ui/MovingBorders";
 
 const Certificates = () => {
@@ -25,9 +26,9 @@ const Certificates = () => {
               key={card.id}
               duration={Math.floor(Math.random() * 10000 + 10000)}
               borderRadius="1.75rem"
-              className="flex-1 text-white border-neutral-200 dark:border-slate-800 h-[180px] "
+              className="flex-1 text-white border-neutral-200 dark:border-slate-800 h-[180px]"
             >
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+              <div className="flex max-sm:p-5 max-sm:flex-row max-md:w-full max-sm:w-auto lg:flex-row lg:items-center lg:p-10 md:flex-row md:justify-center md:gap-x-4 md:p-5 md:w-full flex-col p-3 py-6 gap-2">
                 <img
                   src={card.thumbnail}
                   alt={card.thumbnail}
@@ -39,6 +40,10 @@ const Certificates = () => {
                   </h1>
                   <p className="text-start text-white-100 mt-3 font-semibold ">
                     {card.desc}
+                  </p>
+                  <p className="flex items-center lg:text-sm md:text-xs text-xs text-purple mt-3">
+                    Verifique o Link
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
                   </p>
                 </div>
               </div>

@@ -165,7 +165,7 @@ export const workExperience = [
   {
     id: 1,
     title: "JavaScript Full Stack",
-    desc: "Acesse o link para fazer download dos certificados expedido pela OneBitCode",
+    desc: "Certificado Expedido pela OneBitCode",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
     link: "https://drive.google.com/drive/folders/1YQCwZjknnI4wHt_e7FqIkpUW9Fd-genD",
@@ -173,7 +173,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Python Automações",
-    desc: "Acesse o link para fazer download dos certificados expedido pela OneBitCode",
+    desc: "Certificado Expedido pela OneBitCode",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
     link: "https://drive.google.com/drive/folders/1rcs2PlKlg-_Yj5M5pge31SbC_O-nnkGe",
@@ -181,15 +181,15 @@ export const workExperience = [
   {
     id: 3,
     title: "Curso de Figma para Devs",
-    desc: "Próximo curso para adquirir conhecimento sólido da ferramenta",
+    desc: "Próximo curso",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
     link: "",
   },
   {
     id: 4,
-    title: "Espaço para futura especialização",
-    desc: "Próximo curso para adquirir conhecimento e atualização das ferramentas",
+    title: "Futura especialização",
+    desc: "Próximo curso",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
     link: "",
