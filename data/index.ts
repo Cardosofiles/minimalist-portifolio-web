@@ -210,7 +210,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "/discord.svg",
-    link: "https://discord.com/invite/BMgS9nvW",
+    link: "https://discord.gg/98spMasfdX",
   },
 ];
 
