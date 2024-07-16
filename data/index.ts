@@ -188,7 +188,7 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "Futura especialização",
+    title: "Futura Especialização Dev",
     desc: "Próximo curso",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",

@@ -28,13 +28,16 @@ const Certificates = () => {
               borderRadius="1.75rem"
               className="flex-1 text-white border-neutral-200 dark:border-slate-800 h-[180px]"
             >
-              <div className="flex max-sm:p-5 max-sm:flex-row max-md:w-full max-sm:w-auto lg:flex-row lg:items-center lg:p-10 md:flex-row md:justify-center md:gap-x-4 md:p-5 md:w-full flex-col p-3 py-6 gap-2">
+              <div
+                className="flex max-sm:p-5 max-sm:flex-row max-md:w-full max-sm:w-auto lg:flex-row 
+              lg:items-center lg:p-10 md:flex-row md:justify-center md:gap-x-4 md:p-5 md:w-full flex-col p-3 py-6 gap-2"
+              >
                 <img
                   src={card.thumbnail}
                   alt={card.thumbnail}
                   className="lg:w-32 md:w-20 w-16"
                 />
-                <div className="lg:ms-5 ">
+                <div className="lg:ms-5">
                   <h1 className="text-start text-xl md:text-2xl font-bold">
                     {card.title}
                   </h1>
