@@ -16,7 +16,7 @@ export const CardDemoFront: React.FC<CardDemoProps> = ({ title, desc }) => {
       </CardSkeletonContainer>
       <CardTitle>Front-end</CardTitle>
       <CardDescription>
-        Tecnologias para Desenvolvimento WEB, com Conceitos Modernos de UI/UX
+        Linguagens para Desenvolvimento WEB, com Conceitos Modernos de UI/UX.
       </CardDescription>
     </Card>
   );

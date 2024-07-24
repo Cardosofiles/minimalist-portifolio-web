@@ -6,7 +6,7 @@ const Languages = () => {
   return (
     <div>
       <h1 className="heading" id="knowledge">
-        Linguagens{" "}
+        Tecnologias{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
           Favoritas
         </span>

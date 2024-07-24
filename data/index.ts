@@ -107,8 +107,8 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "O curso de bacharelado em Ciência da Computação me capacitará profissionalmente para desenvolver aplicações científicas e tecnológicas, usando Matemática e Lógica. Com a formação científica e técnica abrangente, o curso visa ao desenvolvimento pessoal e à criação de novas tecnologias, atendendo às demandas do mercado e da comunidade científica.",
-    name: "Ciência da Computação",
+      "O curso de Análise e Desenvolvimento de Sistemas tem como objetivo me desenvolver para implementar, manter e gerenciar infraestruturas de TI, utilizando ferramentas computacionais, equipamentos de informática e metodologias de projetos. Foca na atuação de desenvolvimento WEB com usabilidade, robustez, integridade e segurança dos sistemas, preparando para utilizar as tecnologias do mercado empresarial e administrativo.",
+    name: "Análise e Desenvolvimento de Sistemas",
     title: "Unitri - Centro Universitário do Triângulo",
     image: "/unitri.jpeg",
   },

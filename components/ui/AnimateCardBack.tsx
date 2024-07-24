@@ -11,8 +11,8 @@ export function CardDemoBack() {
       </CardSkeletonContainer>
       <CardTitle>Back-end</CardTitle>
       <CardDescription>
-        Conjunto de Linguagens para desenvolvimento de servidores junto com
-        automações de tarefas.
+        Conjunto de Linguagens para Análise de Dados, Automações de Tarefas e
+        Teste de API junto com Armazenamento de Dados
       </CardDescription>
     </Card>
   );
