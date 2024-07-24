@@ -49,7 +49,7 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Atualmente cursando Ciência da Computação",
+    title: "Atualmente cursando ADS",
     description: "Unitri Uberlândia",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -107,7 +107,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "O curso de Análise e Desenvolvimento de Sistemas tem como objetivo me desenvolver para implementar, manter e gerenciar infraestruturas de TI, utilizando ferramentas computacionais, equipamentos de informática e metodologias de projetos. Foca na atuação de desenvolvimento WEB com usabilidade, robustez, integridade e segurança dos sistemas, preparando para utilizar as tecnologias do mercado empresarial e administrativo.",
+      "O curso de Análise e Desenvolvimento de Sistema tem como objetivo me desenvolver para implementar, manter e gerenciar infraestruturas de TI, utilizando ferramentas computacionais, equipamentos de informática e metodologias de projetos. Foca na atuação de desenvolvimento WEB com usabilidade, robustez, integridade e segurança dos sistemas, preparando para utilizar as tecnologias do mercado empresarial e administrativo.",
     name: "Análise e Desenvolvimento de Sistemas",
     title: "Unitri - Centro Universitário do Triângulo",
     image: "/unitri.jpeg",
