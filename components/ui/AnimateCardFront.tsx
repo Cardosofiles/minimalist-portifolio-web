@@ -79,19 +79,19 @@ const Skeleton = () => {
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="h-8 w-8 circle-1">
-          <ClaudeLogo className="h-4 w-4 " />
+          <JavaScriptLogo className="h-4 w-4 " />
         </Container>
         <Container className="h-12 w-12 circle-2">
           <TypeScriptLogo className="h-6 w-6 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <OpenAILogo className="h-8 w-8 dark:text-white" />
+          <Reactlogo className="h-8 w-8 dark:text-white" />
         </Container>
         <Container className="h-12 w-12 circle-4">
-          <MetaIconOutline className="h-6 w-6 " />
+          <NextJsLogo className="h-6 w-6 " />
         </Container>
         <Container className="h-8 w-8 circle-5">
-          <GeminiLogo className="h-4 w-4 " />
+          <TailwindCssLogo className="h-4 w-4 " />
         </Container>
       </div>
 
@@ -248,7 +248,7 @@ const Container = ({
   );
 };
 
-export const ClaudeLogo = ({ className }: { className?: string }) => {
+export const JavaScriptLogo = ({ className }: { className?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +264,7 @@ export const ClaudeLogo = ({ className }: { className?: string }) => {
   );
 };
 
-export const OpenAILogo = ({ className }: { className?: string }) => {
+export const Reactlogo = ({ className }: { className?: string }) => {
   return (
     <svg
       width="27"
@@ -293,7 +293,7 @@ export const OpenAILogo = ({ className }: { className?: string }) => {
   );
 };
 
-export const GeminiLogo = ({ className }: { className?: string }) => {
+export const TailwindCssLogo = ({ className }: { className?: string }) => {
   return (
     <svg
       width="27"
@@ -340,7 +340,7 @@ export const TypeScriptLogo = ({ className }: { className?: string }) => {
   );
 };
 
-export const MetaIconOutline = ({ className }: { className?: string }) => {
+export const NextJsLogo = ({ className }: { className?: string }) => {
   return (
     <svg
       width="25"

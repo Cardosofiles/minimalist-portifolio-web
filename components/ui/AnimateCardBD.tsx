@@ -81,10 +81,10 @@ const Skeleton = () => {
           <FaGithub className="h-6 w-6 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <OpenAILogo className="h-10 w-10 dark:text-white" />
+          <GitLogo className="h-10 w-10 dark:text-white" />
         </Container>
         <Container className="h-12 w-12 circle-4">
-          <MetaIconOutline className="h-6 w-6 " />
+          <FigmaLogo className="h-6 w-6 " />
         </Container>
         <Container className="h-8 w-8 circle-5">
           <GeminiLogo className="h-4 w-4 " />
@@ -268,7 +268,7 @@ export const ClaudeLogo = ({ className }: { className?: string }) => {
   );
 };
 
-export const OpenAILogo = ({ className }: { className?: string }) => {
+export const GitLogo = ({ className }: { className?: string }) => {
   return (
     <svg
       width="800px"
@@ -319,7 +319,7 @@ export const GeminiLogo = ({ className }: { className?: string }) => {
   );
 };
 
-export const MetaIconOutline = ({ className }: { className?: string }) => {
+export const FigmaLogo = ({ className }: { className?: string }) => {
   return (
     <svg
       width="600px"
