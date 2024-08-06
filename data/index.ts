@@ -172,7 +172,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Python Automações",
+    title: "Python Análise de Dados",
     desc: "Certificado Expedido pela OneBitCode",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
