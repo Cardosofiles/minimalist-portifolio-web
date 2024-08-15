@@ -109,8 +109,8 @@ export const testimonials = [
     quote:
       "O curso de Análise e Desenvolvimento de Sistema tem como objetivo me desenvolver para implementar, manter e gerenciar infraestruturas de TI, utilizando ferramentas computacionais, equipamentos de informática e metodologias de projetos. Foca na atuação de desenvolvimento WEB com usabilidade, robustez, integridade e segurança dos sistemas, preparando para utilizar as tecnologias do mercado empresarial e administrativo.",
     name: "Análise e Desenvolvimento de Sistemas",
-    title: "Unitri - Centro Universitário do Triângulo",
-    image: "/unitri.jpeg",
+    title: "Faculdade Anhanguera - São José dos Campos",
+    image: "/image.png",
   },
   {
     quote:
