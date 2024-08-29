@@ -28,7 +28,7 @@ const Footer = () => {
 
         <a
           className="flex items-center justify-center"
-          href="mailto:contatojoaomirana@outlook.com"
+          href="mailto:cardosofiles@outlook.com"
         >
           <MagicButton
             title="Contact-me"

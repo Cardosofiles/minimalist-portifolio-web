@@ -57,7 +57,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
   const rightList = ["Python", "MongoDB", "VS Code"];
 
   const handleCopy = () => {
-    const text = "contatojoaomiranda@outlook.com";
+    const text = "cardosofiles@outlook.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
 
