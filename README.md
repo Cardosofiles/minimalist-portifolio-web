@@ -32,18 +32,10 @@ Se você deseja executar este portfólio localmente, siga os passos abaixo:
    cd seu-repositorio
 
 3. Intale as dependências:
-   npm install
-
-# ou
-
-yarn install
+   npm install ou yarn install
 
 4. Inicie o servidor de desenvolvimento:
-   npm run dev
-
-# ou
-
-yarn dev
+   npm run dev ou yarn dev
 
 5. Abra http://localhost:3000 no seu navegador para ver o portfólio.
 
