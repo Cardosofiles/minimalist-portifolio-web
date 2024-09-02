@@ -26,6 +26,25 @@ _Acima está uma captura de tela do meu portfólio, destacando a interface e o d
 Se você deseja executar este portfólio localmente, siga os passos abaixo:
 
 1. Clone o repositório:
-   ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
+
+2. Navegue até o diretório do projeto:
+   cd seu-repositorio
+
+3. Intale as dependências:
+   npm install
+
+# ou
+
+yarn install
+
+4. Inicie o servidor de desenvolvimento:
+   npm run dev
+
+# ou
+
+yarn dev
+
+5. Abra http://localhost:3000 no seu navegador para ver o portfólio.
+
+Este `README.md` apresenta o portfólio, destaca as tecnologias utilizadas e inclui uma captura de tela referenciada do repositório local. Certifique-se de ajustar os links e informações conforme necessário.
