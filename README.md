@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu Portfólio Pessoal
 
-## Getting Started
+Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e experiências na área de desenvolvimento web. Sinta-se à vontade para explorar e conhecer mais sobre o meu trabalho.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este portfólio foi construído utilizando as seguintes tecnologias:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript, melhorando a manutenção e a escalabilidade do código.
+- **React**: Biblioteca JavaScript para construir interfaces de usuário (UIs) de forma declarativa e eficiente.
+- **Next.js**: Framework React que oferece recursos como renderização do lado do servidor, geração estática de sites e otimização de desempenho.
+- **Tailwind CSS**: Framework CSS utilitário que permite criar layouts responsivos de maneira rápida e customizável.
+- **ShadCN UI**: Conjunto de componentes UI altamente customizáveis para React, facilitando a criação de interfaces consistentes e elegantes.
+- **Aceterity UI**: Biblioteca de componentes que oferece estilos modernos e acessíveis para construir aplicações web.
+- **Git**: Sistema de controle de versão distribuído, essencial para o gerenciamento de código-fonte.
+- **GitHub**: Plataforma de hospedagem de código-fonte, onde este projeto está versionado e disponível para colaboração.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Captura de Tela
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Screenshot do Portfólio](/public//minimalist-print.png)
 
-## Learn More
+_Acima está uma captura de tela do meu portfólio, destacando a interface e o design criados com as tecnologias mencionadas._
 
-To learn more about Next.js, take a look at the following resources:
+## Como Executar Localmente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Se você deseja executar este portfólio localmente, siga os passos abaixo:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
