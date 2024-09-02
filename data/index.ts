@@ -80,11 +80,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Clone do Spotify",
-    des: "Desenvolvido com HTML5 e suas tags semânticas, este projeto utiliza TailwindCSS como framework de estilo, aproveitando as capacidades do Flexbox e Grid Layout para uma estruturação eficiente e responsiva.",
-    img: "/clone-spotify.png",
+    title: "Dashboard UI / UX",
+    des: "Desenvolvido com TypeScript e Next.Js junto com as bibliotecas: AutoAnimate, Framer Motion, Lucide, Tailwind Variants e Radix UI. layout responsivo com tema dark e light.",
+    img: "/tailwind-course.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://clonespotifycardosofiles.netlify.app/",
+    link: "https://tailwind-course-cardosofiles.vercel.app/",
   },
   {
     id: 3,
