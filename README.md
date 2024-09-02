@@ -15,7 +15,7 @@ Este portfólio foi construído utilizando as seguintes tecnologias:
 - **Git**: Sistema de controle de versão distribuído, essencial para o gerenciamento de código-fonte.
 - **GitHub**: Plataforma de hospedagem de código-fonte, onde este projeto está versionado e disponível para colaboração.
 
-## Captura de Tela
+## Image Home Page - Hero
 
 ![Screenshot do Portfólio](/public//minimalist-print.png)
 
