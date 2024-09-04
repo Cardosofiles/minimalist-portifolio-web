@@ -165,7 +165,7 @@ export const workExperience = [
   {
     id: 1,
     title: "JavaScript Full Stack",
-    desc: "Certificado Expedido pela OneBitCode",
+    desc: "Certificados Expedidos pela OneBitCode",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
     link: "https://drive.google.com/drive/folders/1YQCwZjknnI4wHt_e7FqIkpUW9Fd-genD",
@@ -173,18 +173,18 @@ export const workExperience = [
   {
     id: 2,
     title: "Python Análise de Dados",
-    desc: "Certificado Expedido pela OneBitCode",
+    desc: "Certificados Expedidos pela OneBitCode",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
     link: "https://drive.google.com/drive/folders/1rcs2PlKlg-_Yj5M5pge31SbC_O-nnkGe",
   },
   {
     id: 3,
-    title: "Curso de Figma para Devs",
-    desc: "Próximo curso",
+    title: "ReactJS",
+    desc: "Certificados Expedidos pela Rockeseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
-    link: "",
+    link: "https://drive.google.com/drive/folders/1Q0WceS27ytEnYEQPWvemNxQuA1k6jId8?usp=sharing",
   },
   {
     id: 4,
