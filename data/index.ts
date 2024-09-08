@@ -126,6 +126,13 @@ export const testimonials = [
     title: "OneBitCode",
     image: "/oneBitCode.jpg",
   },
+  {
+    quote:
+      "A formação em React.js pela Rocketseat proporciona uma imersão profunda nas tecnologias mais avançadas do ecossistema JavaScript moderno. Durante o curso, você desenvolverá habilidades práticas com TypeScript, React, Next.js, Vite, e TailwindCSS, além de Styled Components para estilização, Radix UI e Shadcn UI para criação de interfaces acessíveis e personalizadas. A formação também inclui o uso de ferramentas poderosas como Axios para consumo de APIs, Prisma para banco de dados, e gerenciamento de estado com Zustand e Redux, tornando-se um desenvolvedor front-end completo e capacitado.",
+    name: "React JS",
+    title: "Rocletseat",
+    image: "/rocketseat.jpg",
+  },
 ];
 
 export const companies = [

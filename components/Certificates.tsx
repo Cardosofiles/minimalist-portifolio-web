@@ -5,7 +5,7 @@ import { Button } from "./ui/MovingBorders";
 
 const Certificates = () => {
   return (
-    <div className="pt-40 pb-40">
+    <div className="pt-40 pb-40 w-full">
       <h1 className="heading" id="knowledge">
         Meus{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
@@ -13,7 +13,7 @@ const Certificates = () => {
         </span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="mt-12 gap-10 grid grid-cols-1 lg:grid-cols-4">
         {workExperience.map((card) => (
           <Link
             key={card.id}
@@ -26,12 +26,9 @@ const Certificates = () => {
               key={card.id}
               duration={Math.floor(Math.random() * 10000 + 10000)}
               borderRadius="1.75rem"
-              className="flex-1 text-white border-neutral-200 dark:border-slate-800 h-[180px]"
+              className="flex-1 text-white border-neutral-200 dark:border-slate-800 h-[180px] p-5"
             >
-              <div
-                className="flex max-sm:p-5 max-sm:flex-row max-md:w-full max-sm:w-auto lg:flex-row 
-              lg:items-center lg:p-10 md:flex-row md:justify-center md:gap-x-4 md:p-5 md:w-full flex-col p-3 py-6 gap-2"
-              >
+              <div className="flex items-center justify-center gap-4 max-sm:gap-5">
                 <img
                   src={card.thumbnail}
                   alt={card.thumbnail}
