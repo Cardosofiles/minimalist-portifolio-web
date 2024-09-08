@@ -13,20 +13,20 @@ const Certificates = () => {
         </span>
       </h1>
 
-      <div className="mt-12 gap-10 grid grid-cols-1 lg:grid-cols-4">
+      <div className="mt-12 gap-10 grid grid-cols-1 lg:grid-cols-4 max-md:grid-cols-1">
         {workExperience.map((card) => (
           <Link
             key={card.id}
             href={card.link}
             target="_blank"
             about="certificados"
-            className="lg:col-span-2"
+            className="grid lg:col-span-2 w-full"
           >
             <Button
               key={card.id}
               duration={Math.floor(Math.random() * 10000 + 10000)}
               borderRadius="1.75rem"
-              className="flex-1 text-white border-neutral-200 dark:border-slate-800 h-[180px] p-5"
+              className="text-white border-neutral-200 dark:border-slate-800 h-[180px] p-5"
             >
               <div className="flex items-center justify-center gap-4 max-sm:gap-5">
                 <img
