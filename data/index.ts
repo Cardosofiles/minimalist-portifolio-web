@@ -128,9 +128,9 @@ export const testimonials = [
   },
   {
     quote:
-      "A formação em React.js pela Rocketseat proporciona uma imersão profunda nas tecnologias mais avançadas do ecossistema JavaScript moderno. Durante o curso, você desenvolverá habilidades práticas com TypeScript, React, Next.js, Vite, e TailwindCSS, além de Styled Components para estilização, Radix UI e Shadcn UI para criação de interfaces acessíveis e personalizadas. A formação também inclui o uso de ferramentas poderosas como Axios para consumo de APIs, Prisma para banco de dados, e gerenciamento de estado com Zustand e Redux, tornando-se um desenvolvedor front-end completo e capacitado.",
+      "A formação em React.js pela Rocketseat proporciona uma imersão profunda nas tecnologias mais avançadas do ecossistema JavaScript moderno. Fui capaz de desenvolver habilidades práticas com TypeScript, React, Next.js, Vite, e TailwindCSS, além de Styled Components para estilização, Radix UI e Shadcn UI para criação de interfaces acessíveis e personalizadas. A formação também inclui o uso de ferramentas poderosas como Axios para consumo de APIs, Prisma para banco de dados, e gerenciamento de estado com Zustand e Redux, tornando-se um desenvolvedor front-end completo e capacitado.",
     name: "React JS",
-    title: "Rocletseat",
+    title: "Rocketseat",
     image: "/rocketseat.jpg",
   },
 ];
@@ -188,7 +188,7 @@ export const workExperience = [
   {
     id: 3,
     title: "ReactJS",
-    desc: "Certificados Expedidos pela Rockeseat",
+    desc: "Certificados Expedidos pela Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
     link: "https://drive.google.com/drive/folders/1Q0WceS27ytEnYEQPWvemNxQuA1k6jId8?usp=sharing",
