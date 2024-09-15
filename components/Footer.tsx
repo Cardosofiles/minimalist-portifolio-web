@@ -39,7 +39,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:mb-5 md:flex-row flex-col justify-between items-center">
+      <div className="flex space-y-5 mt-16 md:mb-5 md:flex-row flex-col justify-between items-center">
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <a
