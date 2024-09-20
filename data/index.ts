@@ -105,7 +105,7 @@ export const projects = [
   {
     id: 5,
     title: "ToDo List | React",
-    des: "Criado TypeScript, React, Vite e CSS Mosules, para praticar os fundamentos do React.",
+    des: "Criado TypeScript, React, Vite e CSS Modules, para praticar os fundamentos do React.",
     img: "/todo-list.png",
     iconLists: ["/ts.svg", "re.svg", "/vitejs.svg", "/sass.svg", "/gsap.svg"],
     link: "https://todo-list-react-red-eight.vercel.app/",
