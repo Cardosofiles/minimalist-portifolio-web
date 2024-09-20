@@ -102,6 +102,14 @@ export const projects = [
     iconLists: ["/html.svg", "/css.svg", "/js.svg", "/sass.svg", "/gsap.svg"],
     link: "https://memorygamecardosofiles.netlify.app/",
   },
+  {
+    id: 5,
+    title: "ToDo List | React",
+    des: "Criado TypeScript, React, Vite e CSS Mosules, para praticar os fundamentos do React.",
+    img: "/todo-list.png",
+    iconLists: ["/ts.svg", "re.svg", "/vitejs.svg", "/sass.svg", "/gsap.svg"],
+    link: "https://todo-list-react-red-eight.vercel.app/",
+  },
 ];
 
 export const testimonials = [
