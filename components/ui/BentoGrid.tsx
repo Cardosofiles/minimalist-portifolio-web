@@ -53,8 +53,8 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
 }) => {
   const [copied, setCopied] = useState(false);
 
-  const leftList = ["TypeScript", "React.JS", "Next.js"];
-  const rightList = ["Python", "MongoDB", "VS Code"];
+  const leftList = ["JavaScript", "React.JS", "Next.js"];
+  const rightList = ["TypeScript", "MongoDB", "PostgreSQL"];
 
   const handleCopy = () => {
     const text = "cardosofiles@outlook.com";
@@ -100,7 +100,9 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
         </div>
 
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          }`}
         >
           {spareImg && (
             <img
@@ -174,7 +176,9 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"} `}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                } `}
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
