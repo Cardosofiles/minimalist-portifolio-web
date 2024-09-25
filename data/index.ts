@@ -110,6 +110,20 @@ export const projects = [
     iconLists: ["/ts.svg", "re.svg", "/vitejs.svg", "/sass.svg", "/gsap.svg"],
     link: "https://todo-list-react-red-eight.vercel.app/",
   },
+  {
+    id: 6,
+    title: "Técnica de Estudo Pomodoro",
+    des: "Criado TypeScript, React, Vite e Styled Component, aprofundando no hooks do React",
+    img: "/pomodoro-technique.png",
+    iconLists: [
+      "/ts.svg",
+      "re.svg",
+      "/vitejs.svg",
+      "/styled-component.svg",
+      "/gsap.svg",
+    ],
+    link: "https://pomodoro-technique-orcin.vercel.app/",
+  },
 ];
 
 export const testimonials = [
