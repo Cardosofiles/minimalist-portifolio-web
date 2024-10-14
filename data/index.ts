@@ -19,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Comunicações flexível em diferentes fusos horários",
+    title: "Comunicações flexíveis em diferentes fusos horários",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -49,8 +49,8 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Atualmente cursando React",
-    description: "Rocketseat",
+    title: "Atualmente cursando React e JavaScript Full Stack",
+    description: "Rocketseat | OneBitCode",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
