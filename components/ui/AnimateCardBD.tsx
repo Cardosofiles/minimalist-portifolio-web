@@ -81,7 +81,7 @@ const Skeleton = () => {
           <FaGithub className="h-6 w-6 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <GitLogo className="h-10 w-10 dark:text-white" />
+          <GitLogo className="h-10 w-10 dark:text-white animate-pulse duration-2000" />
         </Container>
         <Container className="h-12 w-12 circle-4">
           <DockerLogo className="h-6 w-6 " />

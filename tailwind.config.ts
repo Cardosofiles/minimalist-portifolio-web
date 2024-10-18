@@ -26,6 +26,12 @@ const config = {
       },
     },
     extend: {
+      transitionDuration: {
+        "0": "0ms", // duração de 0 milissegundos
+        "2000": "2000ms", // duração de 2 segundos
+        "3000": "3000ms", // duração de 3 segundos
+        // você pode adicionar mais valores personalizados aqui
+      },
       colors: {
         black: {
           DEFAULT: "#000",
