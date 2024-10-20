@@ -272,7 +272,6 @@ export const Reactlogo = ({ className }: { className?: string }) => {
       viewBox="0 0 27 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="animate-spin duration-2000"
     >
       <path
         d="M13.485 14.3832C14.8154 14.3832 15.894 13.3042 15.894 11.9731C15.894 10.642 14.8154 9.56299 13.485 9.56299C12.1545 9.56299 11.0759 10.642 11.0759 11.9731C11.0759 13.3042 12.1545 14.3832 13.485 14.3832Z"
