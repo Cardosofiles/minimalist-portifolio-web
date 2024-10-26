@@ -6,7 +6,7 @@ const Knowledge = () => {
   return (
     <div>
       <h1 className="heading" id="knowledge">
-        Educação e{" "}
+        <span className="text-white">Educação e</span>{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
           Capacitações
         </span>
@@ -20,7 +20,7 @@ const Knowledge = () => {
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
-            speed="normal"
+            speed="fast"
           />
         </div>
 

@@ -7,7 +7,7 @@ const Certificates = () => {
   return (
     <div className="pt-40 pb-40 w-full">
       <h1 className="heading" id="knowledge">
-        Meus{" "}
+        <span className="text-white">Meus</span>{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
           Certificados
         </span>
@@ -26,7 +26,7 @@ const Certificates = () => {
               key={card.id}
               duration={Math.floor(Math.random() * 10000 + 10000)}
               borderRadius="1.75rem"
-              className="text-white border-neutral-200 dark:border-slate-800 h-[180px] p-5"
+              className="text-white border-slate-800 h-[180px] p-5"
             >
               <div className="flex items-center justify-center gap-4 max-sm:gap-5">
                 <img

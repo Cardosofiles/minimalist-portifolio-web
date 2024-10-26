@@ -52,7 +52,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="md:text-base text-sm md:mt-4 md:font-normal font-light">
+        <p className="md:text-base text-sm md:mt-4 md:font-normal font-light text-white">
           Copyright © 2024 João Batista
         </p>
       </div>

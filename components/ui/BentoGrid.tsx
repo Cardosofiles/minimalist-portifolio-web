@@ -80,7 +80,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
       className={cn(
         className,
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl",
-        "transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4"
+        "transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 text-white "
       )}
       style={{
         background: "rgb(2,0,36)",
@@ -155,7 +155,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132e] " />
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132e]" />
               </div>
 
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">

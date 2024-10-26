@@ -78,16 +78,16 @@ const Skeleton = () => {
           <FigmaLogo className="h-4 w-4 " />
         </Container>
         <Container className="h-12 w-12 circle-2">
-          <FaGithub className="h-6 w-6 dark:text-white" />
+          <FaGithub className="h-6 w-6 text-white" />
         </Container>
         <Container className="circle-3">
-          <GitLogo className="h-10 w-10 dark:text-white" />
+          <GitLogo className="h-10 w-10 text-white" />
         </Container>
         <Container className="h-12 w-12 circle-4">
           <DockerLogo className="h-6 w-6 " />
         </Container>
         <Container className="h-8 w-8 circle-5">
-          <ChatGPT className="h-4 w-4 " />
+          <ChatGPT className="h-4 w-4" />
         </Container>
       </div>
 
@@ -167,12 +167,7 @@ export const CardTitle = ({
   className?: string;
 }) => {
   return (
-    <h3
-      className={cn(
-        "text-lg font-semibold text-gray-800 dark:text-white py-2",
-        className
-      )}
-    >
+    <h3 className={cn("text-lg font-semibold text-white py-2", className)}>
       {children}
     </h3>
   );
@@ -187,10 +182,7 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={cn(
-        "text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
-        className
-      )}
+      className={cn("text-sm font-normal text-neutral-400 max-w-sm", className)}
     >
       {children}
     </p>
@@ -212,7 +204,7 @@ export const CardSkeletonContainer = ({
         "h-[15rem] md:h-[20rem] rounded-xl z-40",
         className,
         showGradient &&
-          "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
+          "bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
       )}
     >
       {children}
@@ -316,13 +308,12 @@ export const ChatGPT = ({ className }: { className?: string }) => {
     <svg
       clip-rule="evenodd"
       fill-rule="evenodd"
-      height="1875"
       image-rendering="optimizeQuality"
       shape-rendering="geometricPrecision"
       text-rendering="geometricPrecision"
       viewBox="9534.07 4435.93 21571.86 21590"
-      width="10"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g fill-rule="nonzero">
         <path

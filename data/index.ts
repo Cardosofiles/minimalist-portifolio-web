@@ -50,7 +50,7 @@ export const gridItems = [
   {
     id: 5,
     title: "Atualmente cursando React e JavaScript Full Stack",
-    description: "Rocketseat | OneBitCode",
+    description: "Rocketseat OneBitCode",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -129,28 +129,28 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "O curso de Análise e Desenvolvimento de Sistema tem como objetivo me desenvolver para implementar, manter e gerenciar infraestruturas de TI, utilizando ferramentas computacionais, equipamentos de informática e metodologias de projetos. Foca na atuação de desenvolvimento WEB com usabilidade, robustez, integridade e segurança dos sistemas, preparando para utilizar as tecnologias do mercado empresarial e administrativo.",
+      "O curso prepara para implementar, manter e gerenciar infraestruturas de TI garantindo usabilidade, robustez, integridade e segurança.",
     name: "Análise e Desenvolvimento de Sistemas",
     title: "Faculdade Anhanguera - São José dos Campos",
     image: "/image.png",
   },
   {
     quote:
-      "O curso de Full Stack JavaScript da OneBitCode tem uma imersão completa nas tecnologias mais utilizadas no desenvolvimento web moderno. Ao longo do curso, adquiriri habilidades práticas em diversas linguagens e frameworks essenciais, como HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Next.js, Node.js, APIs, MongoDB, SQL, PostgreSQL e Figma, tornando-se um desenvolvedor full stack competente.",
+      "Full Stack JavaScript da OneBitCode HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Next.js, Node.js, APIs, MongoDB, SQL, PostgreSQL e Figma.",
     name: "Full Stack JavaScript",
     title: "OneBitCode",
     image: "/oneBitCode.jpg",
   },
   {
     quote:
-      "Uma formação abrangente em Python com foco em pandas, pyautogui, selenium, MongoDB e SQLite abrange desde os fundamentos básicos do Python até a manipulação avançada de dados com pandas, automação de tarefas com pyautogui, testes automatizados em navegadores web usando selenium, e o uso de bancos de dados MongoDB e SQLite para armazenamento e manipulação de dados. Essa formação oferece habilidades solidas na automação de tarefas.",
+      "Com foco em pandas, pyautogui, selenium, MongoDB e SQLite abrange desde os fundamentos básicos do Python até a manipulação avançada de dados.",
     name: "Python Automações",
     title: "OneBitCode",
     image: "/oneBitCode.jpg",
   },
   {
     quote:
-      "A formação em React.js pela Rocketseat proporciona uma imersão profunda nas tecnologias mais avançadas do ecossistema JavaScript moderno. Fui capaz de desenvolver habilidades práticas com TypeScript, React, Next.js, Vite, e TailwindCSS, além de Styled Components para estilização, Radix UI e Shadcn UI para criação de interfaces acessíveis e personalizadas. A formação também inclui o uso de ferramentas poderosas como Axios para consumo de APIs, Prisma para banco de dados, e gerenciamento de estado com Zustand e Redux, tornando-se um desenvolvedor front-end completo e capacitado.",
+      "A formação proporciona o conhecimento de gerenciamento de estado, usando vários hooks, zustand, redux, shadcn UI.",
     name: "React JS",
     title: "Rocketseat",
     image: "/rocketseat.jpg",

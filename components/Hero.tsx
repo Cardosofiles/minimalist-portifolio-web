@@ -23,12 +23,12 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white  
-      dark:bg-grid-white/[0.06] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0"
+        className="h-screen w-full bg-black-100
+      dark:bg-grid-white/[0.06] bg-grid-white/[0.06] flex items-center justify-center absolute top-0 left-0"
       >
         <div
           className="absolute pointer-events-none inset-0 flex items-center justify-center
-         dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+         bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
 
@@ -44,7 +44,7 @@ const Hero = () => {
             words="Transformando a Experiência do Usuário com Conceitos Modernos"
           />
 
-          <p className="text-center tracking-widest md:tracking-wider mb-4 text-lg md:text-lg lg:text-lg ">
+          <p className="text-center tracking-widest md:tracking-wider mb-4 text-lg md:text-lg lg:text-lg text-white">
             Futuro Desenvolvedor Full Stack
           </p>
 

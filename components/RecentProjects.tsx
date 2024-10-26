@@ -8,7 +8,7 @@ export const RecentProjects = () => {
   return (
     <div className="pt-40 pb-40" id="projects">
       <h1 className="heading">
-        Galeria dos{" "}
+        <span className="text-white">Galeria dos</span>{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
           Projetos Recentes
         </span>
@@ -36,11 +36,11 @@ export const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 ">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">
                 {title}
               </h1>
 
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2  ">
+              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-neutral-400">
                 {des}
               </p>
 
