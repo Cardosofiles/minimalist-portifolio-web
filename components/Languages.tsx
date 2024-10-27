@@ -14,7 +14,7 @@ const Languages = () => {
 
       <div className="my-20">
         <div className="my-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-12 md:gap-16">
             <CardDemoFront />
             <CardDemoBack />
             <CardDemoDB />

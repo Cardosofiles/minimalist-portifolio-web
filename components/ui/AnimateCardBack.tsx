@@ -5,14 +5,13 @@ import React, { useEffect } from "react";
 
 export function CardDemoBack() {
   return (
-    <Card>
+    <Card className="flex flex-col items-center justify-center">
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
       <CardTitle>Back-end</CardTitle>
       <CardDescription>
-        Conjunto de Linguagens para Análise de Dados, Automações de Tarefas e
-        Teste de API junto com Armazenamento de Dados
+        Análise de Dados, Automações de Tarefas e Armazenamento de Dados
       </CardDescription>
     </Card>
   );
@@ -78,7 +77,7 @@ const Skeleton = () => {
           <NodeIcon className="h-4 w-4 " />
         </Container>
         <Container className="h-12 w-12 circle-2">
-          <Java className="h-6 w-6 dark:text-white" />
+          <Java className="lg:h-6 lg:w-6 md:h-8 md:w-8 dark:text-white" />
         </Container>
         <Container className="circle-3">
           <PythonLogo className="h-8 w-8 dark:text-white" />
@@ -145,7 +144,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] group",
+        "max-w-sm md:max-w-full w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] group",
         className
       )}
       style={{
@@ -167,7 +166,12 @@ export const CardTitle = ({
   className?: string;
 }) => {
   return (
-    <h3 className={cn("text-lg font-semibold text-white py-2", className)}>
+    <h3
+      className={cn(
+        "lg:text-lg md:text-3xl font-semibold text-white py-2",
+        className
+      )}
+    >
       {children}
     </h3>
   );
@@ -182,7 +186,10 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={cn("text-sm font-normal text-neutral-400 max-w-sm", className)}
+      className={cn(
+        "lg:text-sm md:text-xl font-normal text-neutral-400 max-w-sm",
+        className
+      )}
     >
       {children}
     </p>
@@ -222,7 +229,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        `h-16 w-16 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
+        `h-16 w-16 md:h-24 md:w-24 lg:h-10 lg:w-10 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
     shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
     `,
         className
@@ -329,8 +336,7 @@ export const Java = ({ className }: { className?: string }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 48 48"
-      width="28"
-      height="28"
+      className={className}
     >
       <path
         fill="#1565c0"

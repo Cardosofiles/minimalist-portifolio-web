@@ -10,7 +10,7 @@ interface CardDemoProps {
 
 export const CardDemoFront: React.FC<CardDemoProps> = ({ title, desc }) => {
   return (
-    <Card>
+    <Card className="flex flex-col items-center justify-center">
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
@@ -79,19 +79,19 @@ const Skeleton = () => {
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="h-8 w-8 circle-1">
-          <JavaScriptLogo className="h-4 w-4 " />
+          <JavaScriptLogo className="lg:h-4 lg:w-4 md:h-4 md:w-4 sm:h-4 max-sm:w-4" />
         </Container>
         <Container className="h-12 w-12 circle-2">
-          <TypeScriptLogo className="h-6 w-6 dark:text-white" />
+          <TypeScriptLogo className="lg:h-5 lg:w-5 md:h-7 md:w-7" />
         </Container>
         <Container className="circle-3">
-          <Reactlogo className="h-8 w-8 dark:text-white" />
+          <Reactlogo className="lg:h-8 lg:w-8 md:h-10 md:w-10" />
         </Container>
         <Container className="h-12 w-12 circle-4">
-          <NextJsLogo className="h-6 w-6 " />
+          <NextJsLogo className="h-6 w-6 md:h-8 md:w-8" />
         </Container>
         <Container className="h-8 w-8 circle-5">
-          <TailwindCssLogo className="h-4 w-4 " />
+          <TailwindCssLogo className="lg:h-4 lg:w-4 md:h-6 md:w-6" />
         </Container>
       </div>
 
@@ -149,7 +149,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "max-w-sm w-full mx-auto p-8 rounded-xl bordergroup border border-white/[0.1] group-hover/pin:border-white/[0.2]",
+        "max-w-sm md:max-w-full w-full mx-auto p-8 rounded-xl bordergroup border border-white/[0.1] group-hover/pin:border-white/[0.2]",
         className
       )}
       style={{
@@ -171,7 +171,12 @@ export const CardTitle = ({
   className?: string;
 }) => {
   return (
-    <h3 className={cn("text-lg font-semibold text-white py-2", className)}>
+    <h3
+      className={cn(
+        "lg:text-lg font-semibold text-white md:text-3xl py-2",
+        className
+      )}
+    >
       {children}
     </h3>
   );
@@ -186,7 +191,10 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={cn("text-sm font-normal text-neutral-400 max-w-sm", className)}
+      className={cn(
+        "lg:text-sm md:text-xl font-normal text-neutral-400 max-w-sm",
+        className
+      )}
     >
       {children}
     </p>
@@ -226,7 +234,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        `h-16 w-16 rounded-full flex items-center justify-center`,
+        `h-16 w-16 md:h-24 md:w-24 lg:h-10 lg:w-10 rounded-full flex items-center justify-center`,
         className
       )}
       style={{
@@ -264,6 +272,7 @@ export const Reactlogo = ({ className }: { className?: string }) => {
       viewBox="0 0 27 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M13.485 14.3832C14.8154 14.3832 15.894 13.3042 15.894 11.9731C15.894 10.642 14.8154 9.56299 13.485 9.56299C12.1545 9.56299 11.0759 10.642 11.0759 11.9731C11.0759 13.3042 12.1545 14.3832 13.485 14.3832Z"
@@ -312,6 +321,7 @@ export const TypeScriptLogo = ({ className }: { className?: string }) => {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_3307_794)">
         <path

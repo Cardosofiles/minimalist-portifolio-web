@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export function CardDemoDB() {
   return (
-    <Card>
+    <Card className="flex flex-col items-center justify-center">
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
@@ -75,19 +75,19 @@ const Skeleton = () => {
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="h-8 w-8 circle-1">
-          <FigmaLogo className="h-4 w-4 " />
+          <FigmaLogo className="lg:h-4 lg:w-4 md:h-4 md:w-4 sm:h-4 max-sm:w-4" />
         </Container>
         <Container className="h-12 w-12 circle-2">
-          <FaGithub className="h-6 w-6 text-white" />
+          <FaGithub className="lg:h-5 lg:w-5 md:h-8 md:w-8 text-white" />
         </Container>
         <Container className="circle-3">
-          <GitLogo className="h-10 w-10 text-white" />
+          <GitLogo className="lg:h-8 lg:w-8 md:h-12 md:w-12" />
         </Container>
         <Container className="h-12 w-12 circle-4">
-          <DockerLogo className="h-6 w-6 " />
+          <DockerLogo className="h-6 w-6 md:h-8 md:w-8" />
         </Container>
         <Container className="h-8 w-8 circle-5">
-          <ChatGPT className="h-4 w-4" />
+          <ChatGPT className="lg:h-4 lg:w-4 md:h-5 md:w-5" />
         </Container>
       </div>
 
@@ -145,7 +145,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] group",
+        "max-w-sm md:max-w-full w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] group",
         className
       )}
       style={{
@@ -167,7 +167,12 @@ export const CardTitle = ({
   className?: string;
 }) => {
   return (
-    <h3 className={cn("text-lg font-semibold text-white py-2", className)}>
+    <h3
+      className={cn(
+        "lg:text-lg md:text-3xl font-semibold text-white py-2",
+        className
+      )}
+    >
       {children}
     </h3>
   );
@@ -182,7 +187,10 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={cn("text-sm font-normal text-neutral-400 max-w-sm", className)}
+      className={cn(
+        "lg:text-sm md:text-xl font-normal text-neutral-400 max-w-sm",
+        className
+      )}
     >
       {children}
     </p>
@@ -222,7 +230,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        `h-16 w-16 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
+        `h-16 w-16 md:h-24 md:w-24 lg:h-10 lg:w-10  rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
     shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
     `,
         className
@@ -285,8 +293,6 @@ export const FigmaLogo = ({ className }: { className?: string }) => {
 export const GitLogo = ({ className }: { className?: string }) => {
   return (
     <svg
-      width="800px"
-      height="800px"
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
