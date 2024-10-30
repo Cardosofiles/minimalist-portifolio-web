@@ -170,6 +170,7 @@ export const companies = [
     img: "/next.svg",
     nameImg: "/nextjs-svgrepo-com.svg",
   },
+
   {
     id: 4,
     name: "stream",
@@ -177,16 +178,16 @@ export const companies = [
     nameImg: "/tailwindcss-logotype.svg",
   },
   {
+    id: 3,
+    name: "Node",
+    img: "/node-js.png",
+    nameImg: "/node-text.svg",
+  },
+  {
     id: 5,
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
   },
 ];
 
