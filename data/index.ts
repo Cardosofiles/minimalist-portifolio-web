@@ -202,15 +202,15 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Python Análise de Dados",
-    desc: "Certificados Expedidos pela OneBitCode",
+    title: "Node.js",
+    desc: "Certificados Expedidos pela Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
     link: "https://drive.google.com/drive/folders/1rcs2PlKlg-_Yj5M5pge31SbC_O-nnkGe",
   },
   {
     id: 3,
-    title: "ReactJS",
+    title: "React.js | Figma",
     desc: "Certificados Expedidos pela Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
