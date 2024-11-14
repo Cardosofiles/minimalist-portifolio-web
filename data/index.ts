@@ -206,7 +206,7 @@ export const workExperience = [
     desc: "Certificados Expedidos pela Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
-    link: "https://drive.google.com/drive/folders/1rcs2PlKlg-_Yj5M5pge31SbC_O-nnkGe",
+    link: "https://drive.google.com/drive/folders/1S0WshQ80O8MRkl0fcJY5XOQh4Udc7IMJ?usp=drive_link",
   },
   {
     id: 3,
