@@ -77,10 +77,10 @@ const Skeleton = () => {
           <NodeIcon className="h-4 w-4 " />
         </Container>
         <Container className="h-12 w-12 circle-2">
-          <Java className="lg:h-6 lg:w-6 md:h-8 md:w-8 dark:text-white" />
+          <SpringBoot className="lg:h-6 lg:w-6 md:h-6 md:w-6 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <PythonLogo className="h-8 w-8 dark:text-white" />
+          <Java className="h-8 w-8 dark:text-white" />
         </Container>
         <Container className="h-12 w-12 circle-4">
           <MongoDBLogo className="h-6 w-6 " />
@@ -331,6 +331,23 @@ export const NodeIcon = ({ className }: { className?: string }) => {
   );
 };
 
+export const SpringBoot = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      height="2216"
+      viewBox="-2.1 0 514.3 457.8"
+      width="2500"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="m503.5 201.4-100.5-173.9c-8.7-15.1-30.1-27.5-47.6-27.5h-200.8c-17.4 0-38.9 12.4-47.6 27.5l-100.4 173.9c-8.7 15.1-8.7 39.8 0 54.9l100.4 174c8.7 15.1 30.1 27.5 47.6 27.5h200.9c17.4 0 38.8-12.4 47.6-27.5l100.4-174c8.7-15.1 8.7-39.8 0-54.9zm-270.2-105.2c0-11.4 9.3-20.7 20.7-20.7s20.7 9.3 20.7 20.7v123.7c0 11.4-9.3 20.7-20.7 20.7s-20.7-9.3-20.7-20.7zm20.7 264.1c-77.4 0-140.4-63-140.4-140.4.1-44.4 21.1-86.1 56.7-112.7 8.2-6.1 19.7-4.4 25.8 3.8s4.4 19.7-3.8 25.8c-45.9 34.1-55.5 99-21.4 144.9s99 55.5 144.9 21.4c26.3-19.5 41.8-50.4 41.8-83.2-.1-32.9-15.7-63.8-42.2-83.4-8.2-6-9.9-17.6-3.9-25.8s17.6-9.9 25.8-3.9c35.9 26.5 57 68.5 57.1 113.1 0 77.5-63 140.4-140.4 140.4z"
+        fill="#6db33f"
+      />
+    </svg>
+  );
+};
+
 export const Java = ({ className }: { className?: string }) => {
   return (
     <svg
@@ -368,51 +385,6 @@ export const Java = ({ className }: { className?: string }) => {
           d="M24.1,18.7c0.9,2.3,3.9,4,0.7,7c6-2.2,3.5-5.6,2.2-7.8c-1.7-2.6,5.8-6.8,5.8-6.8 C27.4,11.7,22.9,14.3,24.1,18.7z"
         />
       </g>
-    </svg>
-  );
-};
-
-export const PythonLogo = ({ className }: { className?: string }) => {
-  return (
-    <svg
-      width="800px"
-      height="800px"
-      viewBox="0 0 64 64"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454c.771 0 1.395.624 1.395 1.395s-.624 1.395-1.395 1.395a1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z"
-        fill="url(#a)"
-      />
-      <path
-        d="M32.115 47.833c8.124 0 7.617-3.523 7.617-3.523l-.01-3.65H31.97v-1.095h10.832S48 40.155 48 31.958c0-8.197-4.537-7.906-4.537-7.906h-2.708v3.803s.146 4.537-4.465 4.537h-7.688s-4.32-.07-4.32 4.175v7.019s-.656 4.247 7.833 4.247zm4.275-2.454a1.393 1.393 0 0 1-1.395-1.395c0-.77.624-1.394 1.395-1.394s1.395.623 1.395 1.394c0 .772-.624 1.395-1.395 1.395z"
-        fill="url(#b)"
-      />
-      <defs>
-        <linearGradient
-          id="a"
-          x1="19.075"
-          y1="18.782"
-          x2="34.898"
-          y2="34.658"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#387EB8" />
-          <stop offset="1" stop-color="#366994" />
-        </linearGradient>
-        <linearGradient
-          id="b"
-          x1="28.809"
-          y1="28.882"
-          x2="45.803"
-          y2="45.163"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#FFE052" />
-          <stop offset="1" stop-color="#FFC331" />
-        </linearGradient>
-      </defs>
     </svg>
   );
 };
