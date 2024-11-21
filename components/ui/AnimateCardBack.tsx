@@ -1,8 +1,9 @@
 "use client";
-import { cn } from "@/utils/cn";
+
 import { animate, motion } from "framer-motion";
 import React, { useEffect } from "react";
 
+import { cn } from "@/utils/cn";
 export function CardDemoBack() {
   return (
     <Card className="flex flex-col items-center justify-center">

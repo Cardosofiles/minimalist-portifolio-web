@@ -1,6 +1,7 @@
-import { workExperience } from "@/data";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa";
+
+import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
 const Certificates = () => {

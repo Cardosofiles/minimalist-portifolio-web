@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/utils/cn";
+
 import {
   AnimatePresence,
   motion,
@@ -9,6 +9,7 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
+import { cn } from "@/utils/cn";
 export const FloatingNav = ({
   navItems,
   className,

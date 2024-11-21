@@ -1,7 +1,9 @@
 "use client";
-import { cn } from "@/utils/cn";
+
 import { animate, motion } from "framer-motion";
 import React, { useEffect } from "react";
+
+import { cn } from "@/utils/cn";
 
 interface CardDemoProps {
   title?: string;
