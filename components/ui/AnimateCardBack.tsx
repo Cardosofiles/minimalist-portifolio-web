@@ -81,7 +81,7 @@ const Skeleton = () => {
           <SpringBoot className="lg:h-6 lg:w-6 md:h-6 md:w-6 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <Java className="h-8 w-8 dark:text-white" />
+          <Java className="lg:h-8 lg:w-8 md:h-10 md:w-10 dark:text-white" />
         </Container>
         <Container className="h-12 w-12 circle-4">
           <MongoDBLogo className="h-6 w-6 " />
@@ -335,9 +335,9 @@ export const NodeIcon = ({ className }: { className?: string }) => {
 export const SpringBoot = ({ className }: { className?: string }) => {
   return (
     <svg
-      height="2216"
+      height="24"
       viewBox="-2.1 0 514.3 457.8"
-      width="2500"
+      width="24"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
@@ -352,6 +352,8 @@ export const SpringBoot = ({ className }: { className?: string }) => {
 export const Java = ({ className }: { className?: string }) => {
   return (
     <svg
+      width="42"
+      height="42"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 48 48"
       className={className}

@@ -82,13 +82,13 @@ const Skeleton = () => {
           <FaGithub className="lg:h-5 lg:w-5 md:h-8 md:w-8 text-white" />
         </Container>
         <Container className="circle-3">
-          <GitLogo className="lg:h-8 lg:w-8 md:h-12 md:w-12" />
+          <GitLogo className="lg:h-8 lg:w-8 md:h-10 md:w-10" />
         </Container>
         <Container className="h-12 w-12 circle-4">
           <DockerLogo className="h-6 w-6 md:h-8 md:w-8" />
         </Container>
         <Container className="h-8 w-8 circle-5">
-          <ChatGPT className="lg:h-4 lg:w-4 md:h-5 md:w-5" />
+          <ChatGPT className="lg:h-4 lg:w-4 md:h-4 md:w-4 sm:h-4 max-sm:w-4" />
         </Container>
       </div>
 
@@ -295,6 +295,8 @@ export const GitLogo = ({ className }: { className?: string }) => {
   return (
     <svg
       viewBox="0 0 32 32"
+      width="38"
+      height="38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
