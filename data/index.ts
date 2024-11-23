@@ -230,7 +230,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/link.svg",
-    link: "www.linkedin.com/in/joão-batista-dev-front-end",
+    link: "https://www.linkedin.com/in/jo%C3%A3o-batista-dev-front-end/",
   },
   {
     id: 2,
