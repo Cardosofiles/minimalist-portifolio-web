@@ -194,7 +194,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "JavaScript Full Stack",
+    title: "Full Stack JavaScript",
     desc: "Certificados Expedidos pela OneBitCode",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
@@ -202,7 +202,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Node.js",
+    title: "Back-end Node.js",
     desc: "Certificados Expedidos pela Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
@@ -210,7 +210,7 @@ export const workExperience = [
   },
   {
     id: 3,
-    title: "React.js | Figma",
+    title: "Front-end React.js",
     desc: "Certificados Expedidos pela Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
