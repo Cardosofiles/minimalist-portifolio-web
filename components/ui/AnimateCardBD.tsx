@@ -1,7 +1,8 @@
 "use client";
 
 import { animate, motion } from "framer-motion";
-import React, { useEffect } from "react";
+import type React from "react";
+import { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 
 import { cn } from "@/utils/cn";
@@ -65,9 +66,11 @@ const Skeleton = () => {
     ],
   ];
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     // @ts-ignore
     animate(sequence, {
+      // biome-ignore lint/style/useNumberNamespace: <explanation>
       repeat: Infinity,
       repeatDelay: 1,
     });
@@ -117,6 +120,7 @@ const Sparkles = () => {
           }}
           transition={{
             duration: random() * 2 + 4,
+            // biome-ignore lint/style/useNumberNamespace: <explanation>
             repeat: Infinity,
             ease: "linear",
           }}
@@ -124,13 +128,15 @@ const Sparkles = () => {
             position: "absolute",
             top: `${random() * 100}%`,
             left: `${random() * 100}%`,
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             width: `2px`,
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             height: `2px`,
             borderRadius: "50%",
             zIndex: 1,
           }}
           className="inline-block bg-black dark:bg-white"
-        ></motion.span>
+        />
       ))}
     </div>
   );
@@ -249,6 +255,7 @@ const Container = ({
 
 export const FigmaLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="600px"
       height="600px"
@@ -293,6 +300,7 @@ export const FigmaLogo = ({ className }: { className?: string }) => {
 
 export const GitLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       viewBox="0 0 32 32"
       width="38"
@@ -314,6 +322,7 @@ export const GitLogo = ({ className }: { className?: string }) => {
 };
 export const ChatGPT = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       clip-rule="evenodd"
       fill-rule="evenodd"
@@ -368,6 +377,7 @@ export const ChatGPT = ({ className }: { className?: string }) => {
 
 export const DockerLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="24"
       height="24"

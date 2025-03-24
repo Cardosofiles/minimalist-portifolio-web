@@ -52,6 +52,7 @@ const Hero = () => {
           <a
             href="https://drive.google.com/file/d/1EwdAdUczqlKzA_lNizax58Dpkby_QyvG/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             <MagicButton
               title="Download CV"

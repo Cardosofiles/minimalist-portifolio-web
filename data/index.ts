@@ -124,6 +124,14 @@ export const projects = [
     ],
     link: "https://pomodoro-technique-orcin.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Feature Shadcn UI",
+    des: "Criado TypeScript, Next.js Latest, TailwindCSS v4.0, Design moderno e minimalista",
+    img: "/shadcn-charts-web.png",
+    iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/shadcn.svg"],
+    link: "https://shadcn-charts-web.vercel.app/",
+  },
 ];
 
 export const testimonials = [

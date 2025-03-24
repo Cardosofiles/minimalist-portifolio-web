@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
+
 import { animate, motion } from "framer-motion";
-import React, { useEffect } from "react";
+import type React from "react";
 
 import { cn } from "@/utils/cn";
 export function CardDemoBack() {
@@ -64,9 +66,11 @@ const Skeleton = () => {
     ],
   ];
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     // @ts-ignore
     animate(sequence, {
+      // biome-ignore lint/style/useNumberNamespace: <explanation>
       repeat: Infinity,
       repeatDelay: 1,
     });
@@ -106,6 +110,7 @@ const Sparkles = () => {
   return (
     <div className="absolute inset-0">
       {[...Array(12)].map((_, i) => (
+        // biome-ignore lint/style/useSelfClosingElements: <explanation>
         <motion.span
           key={`star-${i}`}
           animate={{
@@ -116,6 +121,7 @@ const Sparkles = () => {
           }}
           transition={{
             duration: random() * 2 + 4,
+            // biome-ignore lint/style/useNumberNamespace: <explanation>
             repeat: Infinity,
             ease: "linear",
           }}
@@ -123,7 +129,9 @@ const Sparkles = () => {
             position: "absolute",
             top: `${random() * 100}%`,
             left: `${random() * 100}%`,
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             width: `2px`,
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             height: `2px`,
             borderRadius: "50%",
             zIndex: 1,
@@ -265,12 +273,13 @@ export const NodeIcon = ({ className }: { className?: string }) => {
           y2="89.7551419%"
           id="linearGradient-1"
         >
-          <stop stop-color="#41873F" offset="0%"></stop>
-          <stop stop-color="#418B3D" offset="32.88%"></stop>
-          <stop stop-color="#419637" offset="63.52%"></stop>
-          <stop stop-color="#3FA92D" offset="93.19%"></stop>
-          <stop stop-color="#3FAE2A" offset="100%"></stop>
+          <stop stop-color="#41873F" offset="0%" />
+          <stop stop-color="#418B3D" offset="32.88%" />
+          <stop stop-color="#419637" offset="63.52%" />
+          <stop stop-color="#3FA92D" offset="93.19%" />
+          <stop stop-color="#3FAE2A" offset="100%" />
         </linearGradient>
+        {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
         <path
           d="M134.922587,1.83244962 C130.579003,-0.610816541 125.420997,-0.610816541 121.077412,1.83244962 L6.78685046,67.8006362 C2.44326617,70.2439024 0,74.8589606 0,79.745493 L0,211.95334 C0,216.839873 2.71474019,221.454931 6.78685046,223.898197 L121.077412,289.866385 C125.420997,292.309649 130.579003,292.309649 134.922587,289.866385 L249.213148,223.898197 C253.556733,221.454931 256,216.839873 256,211.95334 L256,79.745493 C256,74.8589606 253.28526,70.2439024 249.213148,67.8006362 L134.922587,1.83244962 L134.922587,1.83244962 Z"
           id="path-2"
@@ -282,15 +291,15 @@ export const NodeIcon = ({ className }: { className?: string }) => {
           y2="-18.3061379%"
           id="linearGradient-4"
         >
-          <stop stop-color="#41873F" offset="13.76%"></stop>
-          <stop stop-color="#54A044" offset="40.32%"></stop>
-          <stop stop-color="#66B848" offset="71.36%"></stop>
-          <stop stop-color="#6CC04A" offset="90.81%"></stop>
+          <stop stop-color="#41873F" offset="13.76%" />
+          <stop stop-color="#54A044" offset="40.32%" />
+          <stop stop-color="#66B848" offset="71.36%" />
+          <stop stop-color="#6CC04A" offset="90.81%" />
         </linearGradient>
         <path
           d="M134.922587,1.83244962 C130.579003,-0.610816541 125.420997,-0.610816541 121.077412,1.83244962 L6.78685046,67.8006362 C2.44326617,70.2439024 0,74.8589606 0,79.745493 L0,211.95334 C0,216.839873 2.71474019,221.454931 6.78685046,223.898197 L121.077412,289.866385 C125.420997,292.309649 130.579003,292.309649 134.922587,289.866385 L249.213148,223.898197 C253.556733,221.454931 256,216.839873 256,211.95334 L256,79.745493 C256,74.8589606 253.28526,70.2439024 249.213148,67.8006362 L134.922587,1.83244962 L134.922587,1.83244962 Z"
           id="path-5"
-        ></path>
+        />
         <linearGradient
           x1="-4.38880435%"
           y1="49.9972065%"
@@ -298,20 +307,22 @@ export const NodeIcon = ({ className }: { className?: string }) => {
           y2="49.9972065%"
           id="linearGradient-7"
         >
-          <stop stop-color="#6CC04A" offset="9.191646%"></stop>
-          <stop stop-color="#66B848" offset="28.64%"></stop>
-          <stop stop-color="#54A044" offset="59.68%"></stop>
-          <stop stop-color="#41873F" offset="86.24%"></stop>
+          <stop stop-color="#6CC04A" offset="9.191646%" />
+          <stop stop-color="#66B848" offset="28.64%" />
+          <stop stop-color="#54A044" offset="59.68%" />
+          <stop stop-color="#41873F" offset="86.24%" />
         </linearGradient>
       </defs>
       <g>
+        {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
         <path
           d="M134.922587,1.83244962 C130.579003,-0.610816541 125.420997,-0.610816541 121.077412,1.83244962 L6.78685046,67.8006362 C2.44326617,70.2439024 1.66898426e-14,74.8589606 1.66898426e-14,79.745493 L1.66898426e-14,211.95334 C1.66898426e-14,216.839873 2.71474019,221.454931 6.78685046,223.898197 L121.077412,289.866385 C125.420997,292.309649 130.579003,292.309649 134.922587,289.866385 L249.213148,223.898197 C253.556733,221.454931 256,216.839873 256,211.95334 L256,79.745493 C256,74.8589606 253.28526,70.2439024 249.213148,67.8006362 L134.922587,1.83244962 L134.922587,1.83244962 Z"
           fill="url(#linearGradient-1)"
         ></path>
         <g>
-          <mask id="mask-3" fill="white"></mask>
-          <g></g>
+          <mask id="mask-3" fill="white" />
+          <g />
+          {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
           <path
             d="M249.484623,67.8006362 L134.651113,1.83244962 C133.565217,1.28950159 132.207847,0.746553555 131.121951,0.475079538 L2.44326617,220.911983 C3.52916224,222.269353 4.88653235,223.355249 6.24390243,224.169671 L121.077412,290.137857 C124.335101,292.038177 128.135737,292.581124 131.664899,291.495227 L252.470838,70.5153764 C251.656416,69.4294803 250.570518,68.6150581 249.484623,67.8006362 L249.484623,67.8006362 Z"
             fill="url(#linearGradient-4)"
@@ -319,13 +330,14 @@ export const NodeIcon = ({ className }: { className?: string }) => {
           ></path>
         </g>
         <g>
+          {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
           <mask id="mask-6" fill="white"></mask>
-          <g></g>
+          <g />
           <path
             d="M249.756098,223.898195 C253.013785,221.997878 255.457053,218.740191 256.542947,215.211029 L130.579003,0.203604793 C127.321315,-0.339343381 123.792153,-0.0678694115 120.805938,1.83244885 L6.78685046,67.5291613 L129.764581,291.766702 C131.393425,291.495227 133.293743,290.952279 134.922587,290.137857 L249.756098,223.898195 L249.756098,223.898195 Z"
             fill="url(#linearGradient-7)"
             mask="url(#mask-6)"
-          ></path>
+          />
         </g>
       </g>
     </svg>
@@ -334,6 +346,7 @@ export const NodeIcon = ({ className }: { className?: string }) => {
 
 export const SpringBoot = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       height="24"
       viewBox="-2.1 0 514.3 457.8"
@@ -351,6 +364,7 @@ export const SpringBoot = ({ className }: { className?: string }) => {
 
 export const Java = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="42"
       height="42"
@@ -393,6 +407,7 @@ export const Java = ({ className }: { className?: string }) => {
 };
 export const PostgreSQLLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="2424"
       height="2500"
@@ -420,6 +435,7 @@ export const PostgreSQLLogo = ({ className }: { className?: string }) => {
 
 export const MongoDBLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       viewBox="0 0 2500.1 2500"
       xmlns="http://www.w3.org/2000/svg"

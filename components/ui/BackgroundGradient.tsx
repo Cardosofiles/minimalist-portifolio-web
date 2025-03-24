@@ -40,6 +40,8 @@ export const BackgroundGradientAnimation = ({
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     document.body.style.setProperty(
       "--gradient-background-start",
@@ -59,6 +61,7 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--blending-value", blendingValue);
   }, []);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     function move() {
       if (!interactiveRef.current) {
@@ -94,6 +97,7 @@ export const BackgroundGradientAnimation = ({
         containerClassName
       )}
     >
+      {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
       <svg className="hidden">
         <defs>
           <filter id="blurMe">
