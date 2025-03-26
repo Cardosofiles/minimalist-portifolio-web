@@ -132,6 +132,14 @@ export const projects = [
     iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/shadcn.svg"],
     link: "https://shadcn-charts-web.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Gráficos Dinâmicos",
+    des: "Criado TypeScript, Next.js Latest, TailwindCSS v4.0, Design moderno e minimalista",
+    img: "/charts-dinamic.png",
+    iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/shadcn.svg"],
+    link: "https://finance-analysis-client.vercel.app/",
+  },
 ];
 
 export const testimonials = [
