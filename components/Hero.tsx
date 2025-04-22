@@ -1,5 +1,4 @@
 import { FaMailBulk } from "react-icons/fa";
-
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -46,8 +45,22 @@ const Hero = () => {
           />
 
           <p className="text-center tracking-widest md:tracking-wider mb-4 text-lg md:text-lg lg:text-lg text-white">
-            Futuro Desenvolvedor Full Stack
+            Desenvolvedor Full Stack
           </p>
+
+          {/* <div className="flex gap-5">
+            <img src="/tail.svg" alt="" className="h-12 w-12" />
+            <img src="/ts.svg" alt="" className="h-10 w-10" />
+            <img src="/re.svg" alt="" className="h-10 w-10" />
+            <img src="/next.svg" alt="" className="h-10 w-10" />
+            <img src="/node-js.png" alt="" className="h-10 w-10" />
+            <img src="bun.svg" alt="" className="h-11 w-11" />
+            <img src="/dock.svg" alt="" className="h-10 w-10" />
+            <img src="/postgresql.svg" alt="" className="h-10 w-10" />
+            <img src="/git.svg" alt="" className="h-10 w-10" />
+            <img src="/gitHub.svg" alt="" className="h-10 w-10" />
+            <img src="/postman.svg" alt="" className="h-11 w-11" />
+          </div> */}
 
           <a
             href="https://drive.google.com/file/d/1EwdAdUczqlKzA_lNizax58Dpkby_QyvG/view?usp=sharing"

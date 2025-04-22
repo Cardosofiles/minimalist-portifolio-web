@@ -250,7 +250,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/git.svg",
+    img: "/gitHub.svg",
     link: "https://github.com/Cardosofiles",
   },
   {

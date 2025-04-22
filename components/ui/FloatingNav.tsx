@@ -29,7 +29,8 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      // biome-ignore lint/style/noNonNullAssertion: <explanation>
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         // also set true for the initial state
@@ -72,9 +73,13 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
+        {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
         {navItems.map((navItem: any, idx: number) => (
           <Link
-            key={`link=${idx}`}
+            key={`link=${
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+              idx
+            }`}
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-white dark:hover:text-neutral-300 hover:text-neutral-500"

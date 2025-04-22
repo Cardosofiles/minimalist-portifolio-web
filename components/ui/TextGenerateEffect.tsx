@@ -12,7 +12,8 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     animate(
       "span",
@@ -32,6 +33,7 @@ export const TextGenerateEffect = ({
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={word + idx}
               className={`${
                 idx > 6
