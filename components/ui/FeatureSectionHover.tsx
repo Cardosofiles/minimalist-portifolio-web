@@ -25,7 +25,7 @@ export function FeaturesSectionHover() {
       icon: <IconRocket />,
     },
     {
-      title: "Design Resposvivo UI/UX",
+      title: "Design Responsivo UI/UX",
       description:
         "Valorizo a experiência do usuário, aplicando versatilidade para criar interfaces intuitivas e adaptáveis a diferentes dispositivos.",
       icon: <IconDevices />,
@@ -45,7 +45,7 @@ export function FeaturesSectionHover() {
     {
       title: "Formação Acadêmica",
       description:
-        "ursando Análise e Desenvolvimento de Sistemas, aplico os conhecimentos adquiridos para resolver problemas reais, unido boas práticas de desenvolvimento",
+        "Cursando Análise e Desenvolvimento de Sistemas, aplico os conhecimentos adquiridos para resolver problemas reais, unido boas práticas de desenvolvimento.",
       icon: <IconTrophyFilled />,
     },
     {
