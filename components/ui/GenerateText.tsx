@@ -1,7 +1,8 @@
 "use client";
-import { cn } from "@/utils/cn";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { useEffect } from "react";
+
+import { cn } from "@/utils/cn";
 
 export const GenerateText = ({
   words,
@@ -15,7 +16,8 @@ export const GenerateText = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     animate(
       "span",
@@ -36,6 +38,7 @@ export const GenerateText = ({
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={word + idx}
               className="opacity-0"
               style={{

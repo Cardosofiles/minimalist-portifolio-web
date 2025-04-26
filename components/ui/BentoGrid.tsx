@@ -119,7 +119,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
             <div
               className="absolute z-50 inset-0 flex items-center justify-center text-white
                 font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"
-            ></div>
+            />
           </BackgroundGradientAnimation>
         )}
 
@@ -137,6 +137,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
             {description}
           </div>
           <div
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >
             {title}
@@ -149,6 +150,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
               <div className="flex flex-col gap-3 lg:gap-8">
                 {leftList.map((item, i) => (
                   <span
+                    // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -163,6 +165,7 @@ export const BentoGridItem: React.FC<BentoGridItemsProps> = ({
                 <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]" />
                 {rightList.map((item, i) => (
                   <span
+                    // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"

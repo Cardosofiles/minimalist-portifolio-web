@@ -112,7 +112,10 @@ const Sparkles = () => {
       {[...Array(12)].map((_, i) => (
         // biome-ignore lint/style/useSelfClosingElements: <explanation>
         <motion.span
-          key={`star-${i}`}
+          key={`star-${
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+            i
+          }`}
           animate={{
             top: `calc(${random() * 100}% + ${randomMove()}px)`,
             left: `calc(${random() * 100}% + ${randomMove()}px)`,

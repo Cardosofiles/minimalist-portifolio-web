@@ -1,7 +1,12 @@
 "use client";
 
 import { OrbitControls } from "@react-three/drei";
-import { Canvas, extend, Object3DNode, useThree } from "@react-three/fiber";
+import {
+  Canvas,
+  type Object3DNode,
+  extend,
+  useThree,
+} from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 import { Color, Fog, PerspectiveCamera, Scene, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
@@ -118,7 +123,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
   const _buildData = () => {
     const arcs = data;
-    let points = [];
+    const points = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
       const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
@@ -151,6 +156,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     setGlobeData(filteredPoints);
   };
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     if (globeRef.current && globeData) {
       globeRef.current

@@ -210,31 +210,31 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full Stack JavaScript",
-    desc: "Certificados Expedidos pela OneBitCode",
+    title: "Front-end Stacks",
+    desc: "At Rocketseat and OneBitCode",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
-    link: "https://drive.google.com/drive/folders/1YQCwZjknnI4wHt_e7FqIkpUW9Fd-genD",
+    link: "https://drive.google.com/drive/folders/1fROqFoJqtnSnBM3NiwhcZFjrPyJmwS3V?usp=sharing",
   },
   {
     id: 2,
-    title: "Back-end Node.js",
-    desc: "Certificados Expedidos pela Rocketseat",
+    title: "Back-end Stacks",
+    desc: "At Rocketseat and OneBitCode",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
-    link: "https://drive.google.com/drive/folders/1S0WshQ80O8MRkl0fcJY5XOQh4Udc7IMJ?usp=drive_link",
+    link: "https://drive.google.com/drive/folders/1vg1uEAWOuIcjmRdeB3y2d_DjS4rueHFr?usp=sharing",
   },
   {
     id: 3,
-    title: "Front-end React.js",
-    desc: "Certificados Expedidos pela Rocketseat",
+    title: "DevOps Stacks",
+    desc: "At Rocketseat",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
-    link: "https://drive.google.com/drive/folders/1Q0WceS27ytEnYEQPWvemNxQuA1k6jId8?usp=sharing",
+    link: "https://drive.google.com/drive/folders/1acTpozRTH8i0yFV_WUtW7l0QR26rXO_C?usp=sharing",
   },
   {
     id: 4,
-    title: "Futura Especialização Dev",
+    title: "Feature Stacks",
     desc: "Próximo curso",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",

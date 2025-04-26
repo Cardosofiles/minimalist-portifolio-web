@@ -4,6 +4,7 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Knowledge from "@/components/Knowledge";
 import Languages from "@/components/Languages";
+import RecentAchievements from "@/components/RecentAchievements";
 import { RecentProjects } from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
@@ -22,6 +23,7 @@ export default function Home() {
         <Knowledge />
         <Certificates />
         <Languages />
+        <RecentAchievements />
         <Footer />
       </div>
     </main>

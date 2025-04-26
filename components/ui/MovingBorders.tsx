@@ -7,7 +7,8 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import React, { useRef } from "react";
+import type React from "react";
+import { useRef } from "react";
 
 import { cn } from "@/utils/cn";
 
@@ -23,11 +24,13 @@ export function Button({
 }: {
   borderRadius?: string;
   children?: React.ReactNode;
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   as?: any;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   [key: string]: any;
 }) {
   return (
@@ -84,8 +87,10 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   [key: string]: any;
 }) => {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   const pathRef = useRef<any>();
   const progress = useMotionValue<number>(0);
 
@@ -110,6 +115,7 @@ export const MovingBorder = ({
 
   return (
     <>
+      {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"

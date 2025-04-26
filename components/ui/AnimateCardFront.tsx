@@ -1,7 +1,8 @@
 "use client";
 
 import { animate, motion } from "framer-motion";
-import React, { useEffect } from "react";
+import type React from "react";
+import { useEffect } from "react";
 
 import { cn } from "@/utils/cn";
 
@@ -70,10 +71,11 @@ const Skeleton = () => {
     ],
   ];
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     // @ts-ignore
     animate(sequence, {
-      repeat: Infinity,
+      repeat: Number.POSITIVE_INFINITY,
       repeatDelay: 1,
     });
   }, []);
@@ -112,6 +114,7 @@ const Sparkles = () => {
   return (
     <div className="absolute inset-0">
       {[...Array(12)].map((_, i) => (
+        // biome-ignore lint/style/useSelfClosingElements: <explanation>
         <motion.span
           key={`star-${i}`}
           animate={{
@@ -122,6 +125,7 @@ const Sparkles = () => {
           }}
           transition={{
             duration: random() * 2 + 4,
+            // biome-ignore lint/style/useNumberNamespace: <explanation>
             repeat: Infinity,
             ease: "linear",
           }}
@@ -129,7 +133,9 @@ const Sparkles = () => {
             position: "absolute",
             top: `${random() * 100}%`,
             left: `${random() * 100}%`,
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             width: `2px`,
+            // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             height: `2px`,
             borderRadius: "50%",
             zIndex: 1,
@@ -236,6 +242,7 @@ const Container = ({
   return (
     <div
       className={cn(
+        // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
         `h-16 w-16 md:h-24 md:w-24 lg:h-10 lg:w-10 rounded-full flex items-center justify-center`,
         className
       )}
@@ -252,6 +259,7 @@ const Container = ({
 
 export const JavaScriptLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 630 630"
@@ -268,6 +276,7 @@ export const JavaScriptLogo = ({ className }: { className?: string }) => {
 
 export const Reactlogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="27"
       height="24"
@@ -298,6 +307,7 @@ export const Reactlogo = ({ className }: { className?: string }) => {
 
 export const TailwindCssLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="27"
       height="16"
@@ -317,6 +327,7 @@ export const TailwindCssLogo = ({ className }: { className?: string }) => {
 
 export const TypeScriptLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="24"
       height="24"
@@ -346,6 +357,7 @@ export const TypeScriptLogo = ({ className }: { className?: string }) => {
 
 export const NextJsLogo = ({ className }: { className?: string }) => {
   return (
+    // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
     <svg
       width="25"
       height="25"
