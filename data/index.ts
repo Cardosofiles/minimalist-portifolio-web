@@ -282,7 +282,6 @@ export const languagens = [
 ];
 
 export const images = [
-  "/background.jpg",
   "/virtual-tech.jpg",
   "/atomo.jpg",
   "/connection.jpg",
@@ -290,4 +289,5 @@ export const images = [
   "/reality-simulator.jpg",
   "/touch.jpg",
   "/city-connected.jpg",
+  "/coding.jpg",
 ];

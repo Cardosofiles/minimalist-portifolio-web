@@ -54,7 +54,7 @@ export function CardsCarouselRepositories() {
           </div>
         ),
         access: (
-          <p className="flex items-center gap-2 lg:text-xl md:text-xs text-xs text-neutral-50">
+          <p className="flex items-center gap-2 lg:text-xl md:text-xs text-xs text-neutral-50 bg-gradient-to-r from-blue-600 to-purple rounded-lg py-1 px-2 md:px-4 ">
             Verifique os detalhes
             <IconHandFinger className="animate-pulse lg:size-5 size-4" />
           </p>
