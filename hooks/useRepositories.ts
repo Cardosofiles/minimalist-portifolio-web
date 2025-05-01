@@ -1,4 +1,4 @@
-// hooks/useGithubRepos.ts
+// request example with useState and useEffect
 "use client";
 import { useEffect, useState } from "react";
 
