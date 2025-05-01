@@ -280,3 +280,14 @@ export const languagens = [
     iconsList: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
   },
 ];
+
+export const images = [
+  "/background.jpg",
+  "/virtual-tech.jpg",
+  "/atomo.jpg",
+  "/connection.jpg",
+  "/server.jpg",
+  "/reality-simulator.jpg",
+  "/touch.jpg",
+  "/city-connected.jpg",
+];
