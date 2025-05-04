@@ -16,6 +16,7 @@ import React, {
 
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -296,8 +297,7 @@ export const BlurImage = ({
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
   return (
-    // biome-ignore lint/a11y/useAltText: <explanation>
-    <img
+    <Image
       className={cn(
         "h-full w-full transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
