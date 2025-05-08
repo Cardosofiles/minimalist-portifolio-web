@@ -1,13 +1,15 @@
 "use client";
 
-import { IconCircle, IconHandFinger } from "@tabler/icons-react";
-import { QueryClientProvider, useQuery } from "@tanstack/react-query";
+import { IconHandFinger } from "@tabler/icons-react";
+import { QueryClientProvider } from "@tanstack/react-query";
 import { FaLocationArrow } from "react-icons/fa";
 
 import { Card, Carousel } from "@/components/ui/CardCarousel";
 import { images } from "@/data";
-import { api } from "@/utils/api";
+import { useRepository } from "@/hooks/useRepository";
 import { queryClient } from "@/utils/queryClient";
+import type { Key } from "react";
+import { Skeleton } from "./Skeleton";
 
 type Repo = {
   id: number;
@@ -29,28 +31,32 @@ export function CardsCarouselRepositories() {
 }
 
 function QueryData() {
-  const {
-    data: repo,
-    isPending,
-    error,
-  } = useQuery<Repo[]>({
-    queryKey: ["repoData"],
-    queryFn: async () => {
-      const response = await api.get<Repo[]>("/users/Cardosofiles/repos");
-      return response.data;
-    },
-  });
+  const { data: repo, isPending, error } = useRepository();
 
   if (isPending) {
     return (
-      <p className="flex items-center justify-center">
-        <IconCircle className="animate-spin size-20" />
-      </p>
+      <div className="flex items-center justify-center gap-11">
+        {Array.from({ length: 4 }).map(
+          (_: any, index: Key | null | undefined) => (
+            <div
+              key={index}
+              className="flex flex-col border border-slate-900 space-y-3"
+            >
+              <div className="relative">
+                <Skeleton className="md:h-[440px] md:w-[270px] h-[220px] w-[135px]" />
+                <div className="absolute bottom-5 right-4">
+                  <Skeleton className="md:h-8 md:w-60 h-4 w-30" />
+                </div>
+              </div>
+            </div>
+          )
+        )}
+      </div>
     );
   }
 
   if (error instanceof Error) {
-    return <p className="text-red-500 text-center">Erro: {error.message}</p>;
+    return <p className="text-red-700 text-center">Error: {error.message}</p>;
   }
 
   if (!repo || repo.length === 0) {

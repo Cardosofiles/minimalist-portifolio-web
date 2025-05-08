@@ -37,3 +37,4 @@ next-env.d.ts
 
 # backup files
 txt/
+.env.local
