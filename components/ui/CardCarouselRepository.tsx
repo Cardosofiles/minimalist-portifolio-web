@@ -37,8 +37,10 @@ function QueryData() {
     return (
       <div className="flex items-center justify-center gap-11">
         {Array.from({ length: 4 }).map(
+          // biome-ignore lint/suspicious/noExplicitAny: <explanation>
           (_: any, index: Key | null | undefined) => (
             <div
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
               className="flex flex-col border border-slate-900 space-y-3"
             >

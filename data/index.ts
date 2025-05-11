@@ -91,7 +91,13 @@ export const projects = [
     title: "Social Feed",
     des: "Projeto para implementar os conceitos fundamentais do ReactJS, sendo eles, estado, propriedade e componente.",
     img: "/home-page.png",
-    iconLists: ["/re.svg", "/css.svg", "/ts.svg", "/vitejs.svg", "/c.svg"],
+    iconLists: [
+      "/re.svg",
+      "/css.svg",
+      "/ts.svg",
+      "/vitejs.svg",
+      "/prettier.svg",
+    ],
     link: "https://social-feed-reactjs.vercel.app/",
   },
   {
@@ -99,7 +105,13 @@ export const projects = [
     title: "Jogo da Memória",
     des: "Criado com HTML, CSS e JavaScript, afim de Praticar a Lógica de Programação",
     img: "/memory-game.png",
-    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/sass.svg", "/gsap.svg"],
+    iconLists: [
+      "/html.svg",
+      "/css.svg",
+      "/js.svg",
+      "/sass.svg",
+      "/prettier.svg",
+    ],
     link: "https://memorygamecardosofiles.netlify.app/",
   },
   {
@@ -107,7 +119,13 @@ export const projects = [
     title: "ToDo List | React",
     des: "Criado TypeScript, React, Vite e CSS Modules, para praticar os fundamentos do React.",
     img: "/todo-list.png",
-    iconLists: ["/ts.svg", "re.svg", "/vitejs.svg", "/sass.svg", "/gsap.svg"],
+    iconLists: [
+      "/ts.svg",
+      "re.svg",
+      "/vitejs.svg",
+      "/sass.svg",
+      "/prettier.svg",
+    ],
     link: "https://todo-list-react-red-eight.vercel.app/",
   },
   {
@@ -120,7 +138,7 @@ export const projects = [
       "re.svg",
       "/vitejs.svg",
       "/styled-component.svg",
-      "/gsap.svg",
+      "/prettier.svg",
     ],
     link: "https://pomodoro-technique-orcin.vercel.app/",
   },
@@ -129,7 +147,7 @@ export const projects = [
     title: "Feature Shadcn UI",
     des: "Criado TypeScript, Next.js Latest, TailwindCSS v4.0, Design moderno e minimalista",
     img: "/shadcn-charts-web.png",
-    iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/shadcn.svg"],
+    iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/radix.svg"],
     link: "https://shadcn-charts-web.vercel.app/",
   },
   {
@@ -137,7 +155,7 @@ export const projects = [
     title: "Gráficos Dinâmicos",
     des: "Criado TypeScript, Next.js Latest, TailwindCSS v4.0, Design moderno e minimalista",
     img: "/charts-dinamic.png",
-    iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/shadcn.svg"],
+    iconLists: ["/ts.svg", "re.svg", "/next.svg", "/tail.svg", "/radix.svg"],
     link: "https://finance-analysis-client.vercel.app/",
   },
 ];
