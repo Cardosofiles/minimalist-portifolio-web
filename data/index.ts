@@ -69,7 +69,7 @@ export const gridItems = [
   },
 ]
 
-export const projects = [
+export const projectsFrontEnd = [
   {
     id: 1,
     title: 'Portifólio WEB',
@@ -157,6 +157,25 @@ export const projects = [
     img: '/charts-dinamic.png',
     iconLists: ['/ts.svg', 're.svg', '/next.svg', '/tail.svg', '/radix.svg'],
     link: 'https://finance-analysis-client.vercel.app/',
+  },
+]
+
+export const projectsBackEnd = [
+  {
+    id: 1,
+    title: 'Gerenciador de Tarefas',
+    des: 'Desenvolvido com Java, Spring Boot, Apache Maven, Docker e Ubuntu, este projeto visa apresentar meu currículo e certificados de forma acessível e organizada para recrutadores.',
+    img: '/task-manager-home.png',
+    iconLists: ['/java-.svg', '/spring-boot.svg', '/postgresql.svg', '/dock.svg', '/ubuntu-4.svg'],
+    link: 'https://github.com/Cardosofiles/task-manager-server',
+  },
+  {
+    id: 2,
+    title: 'Simulador Fluxo de Caixa',
+    des: 'Desenvolvido com Java, este projeto visa apresentar meu currículo e certificados de forma acessível e organizada para recrutadores.',
+    img: 'task-manager-home.png',
+    iconLists: ['/java-.svg', '/spring-boot.svg', '/postgresql.svg', '/dock.svg', '/ubuntu-4.svg'],
+    link: 'https://github.com/Cardosofiles/checking-account-server',
   },
 ]
 
@@ -278,7 +297,7 @@ export const socialMedia = [
   },
 ]
 
-export const languagens = [
+export const languages = [
   {
     id: 1,
     title: 'Front-end',

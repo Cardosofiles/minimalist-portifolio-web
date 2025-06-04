@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
-import { animate, motion } from "framer-motion";
-import type React from "react";
+import { animate, motion } from 'framer-motion'
+import type React from 'react'
 
-import { cn } from "@/utils/cn";
+import { cn } from '@/utils/cn'
 export function CardDemoBack() {
   return (
     <Card className="flex flex-col items-center justify-center">
@@ -17,15 +17,15 @@ export function CardDemoBack() {
         Criação de API REST, Persistência de dados (CRUD) e Regras de Negócio.
       </CardDescription>
     </Card>
-  );
+  )
 }
 
 const Skeleton = () => {
-  const scale = [1, 1.1, 1];
-  const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
+  const scale = [1, 1.1, 1]
+  const transform = ['translateY(0px)', 'translateY(-4px)', 'translateY(0px)']
   const sequence = [
     [
-      ".circle-1",
+      '.circle-1',
       {
         scale,
         transform,
@@ -33,7 +33,7 @@ const Skeleton = () => {
       { duration: 0.8 },
     ],
     [
-      ".circle-2",
+      '.circle-2',
       {
         scale,
         transform,
@@ -41,7 +41,7 @@ const Skeleton = () => {
       { duration: 0.8 },
     ],
     [
-      ".circle-3",
+      '.circle-3',
       {
         scale,
         transform,
@@ -49,7 +49,7 @@ const Skeleton = () => {
       { duration: 0.8 },
     ],
     [
-      ".circle-4",
+      '.circle-4',
       {
         scale,
         transform,
@@ -57,14 +57,14 @@ const Skeleton = () => {
       { duration: 0.8 },
     ],
     [
-      ".circle-5",
+      '.circle-5',
       {
         scale,
         transform,
       },
       { duration: 0.8 },
     ],
-  ];
+  ]
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
@@ -73,40 +73,40 @@ const Skeleton = () => {
       // biome-ignore lint/style/useNumberNamespace: <explanation>
       repeat: Infinity,
       repeatDelay: 1,
-    });
-  }, []);
+    })
+  }, [])
   return (
-    <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-        <Container className="h-8 w-8 circle-1">
-          <NodeIcon className="h-4 w-4 " />
+    <div className="relative flex h-full items-center justify-center overflow-hidden p-8">
+      <div className="flex flex-shrink-0 flex-row items-center justify-center gap-2">
+        <Container className="circle-1 h-8 w-8">
+          <NodeIcon className="h-4 w-4" />
         </Container>
-        <Container className="h-12 w-12 circle-2">
-          <SpringBoot className="lg:h-6 lg:w-6 md:h-6 md:w-6 dark:text-white" />
+        <Container className="circle-2 h-12 w-12">
+          <SpringBoot className="dark:text-white md:h-6 md:w-6 lg:h-6 lg:w-6" />
         </Container>
         <Container className="circle-3">
-          <Java className="lg:h-8 lg:w-8 md:h-10 md:w-10 dark:text-white" />
+          <Java className="dark:text-white md:h-10 md:w-10 lg:h-8 lg:w-8" />
         </Container>
-        <Container className="h-12 w-12 circle-4">
-          <MongoDBLogo className="h-6 w-6 " />
+        <Container className="circle-4 h-12 w-12">
+          <MongoDBLogo className="h-6 w-6" />
         </Container>
-        <Container className="h-8 w-8 circle-5">
+        <Container className="circle-5 h-8 w-8">
           <PostgreSQLLogo className="h-6 w-6" />
         </Container>
       </div>
 
-      <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
-        <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
+      <div className="absolute top-20 z-40 m-auto h-40 w-px animate-move bg-gradient-to-b from-transparent via-cyan-500 to-transparent">
+        <div className="absolute -left-10 top-1/2 h-32 w-10 -translate-y-1/2">
           <Sparkles />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 const Sparkles = () => {
-  const randomMove = () => Math.random() * 2 - 1;
-  const randomOpacity = () => Math.random();
-  const random = () => Math.random();
+  const randomMove = () => Math.random() * 2 - 1
+  const randomOpacity = () => Math.random()
+  const random = () => Math.random()
   return (
     <div className="absolute inset-0">
       {[...Array(12)].map((_, i) => (
@@ -126,136 +126,134 @@ const Sparkles = () => {
             duration: random() * 2 + 4,
             // biome-ignore lint/style/useNumberNamespace: <explanation>
             repeat: Infinity,
-            ease: "linear",
+            ease: 'linear',
           }}
           style={{
-            position: "absolute",
+            position: 'absolute',
             top: `${random() * 100}%`,
             left: `${random() * 100}%`,
             // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             width: `2px`,
             // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
             height: `2px`,
-            borderRadius: "50%",
+            borderRadius: '50%',
             zIndex: 1,
           }}
           className="inline-block bg-black dark:bg-white"
         ></motion.span>
       ))}
     </div>
-  );
-};
+  )
+}
 
 export const Card = ({
   className,
   children,
 }: {
-  className?: string;
-  children: React.ReactNode;
+  className?: string
+  children: React.ReactNode
 }) => {
   return (
     <div
       className={cn(
-        "max-w-sm md:max-w-full w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] group",
+        'group mx-auto w-full max-w-sm rounded-xl border border-[rgba(255,255,255,0.10)] p-8 md:max-w-full',
         className
       )}
       style={{
-        background: "rgb(2,0,36)",
+        background: 'rgb(2,0,36)',
         backgroundColor:
-          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 50%, rgba(93,108,111,1) 100%)",
+          'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 50%, rgba(93,108,111,1) 100%)',
       }}
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
 export const CardTitle = ({
   children,
   className,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) => {
   return (
     <h3
       className={cn(
-        "lg:text-lg md:text-3xl font-semibold text-white py-2",
+        'py-2 font-semibold text-white md:text-3xl lg:text-lg',
         className
       )}
     >
       {children}
     </h3>
-  );
-};
+  )
+}
 
 export const CardDescription = ({
   children,
   className,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) => {
   return (
     <p
       className={cn(
-        "lg:text-sm md:text-xl font-normal text-neutral-400 max-w-sm",
+        'max-w-sm font-normal text-neutral-400 md:text-xl lg:text-sm',
         className
       )}
     >
       {children}
     </p>
-  );
-};
+  )
+}
 
 export const CardSkeletonContainer = ({
   className,
   children,
   showGradient = true,
 }: {
-  className?: string;
-  children: React.ReactNode;
-  showGradient?: boolean;
+  className?: string
+  children: React.ReactNode
+  showGradient?: boolean
 }) => {
   return (
     <div
       className={cn(
-        "h-[15rem] md:h-[20rem] rounded-xl z-40",
+        'z-40 h-[15rem] rounded-xl md:h-[20rem]',
         className,
         showGradient &&
-          "bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
+          'bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]'
       )}
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
 const Container = ({
   className,
   children,
 }: {
-  className?: string;
-  children: React.ReactNode;
+  className?: string
+  children: React.ReactNode
 }) => {
   return (
     <div
       className={cn(
-        `h-16 w-16 md:h-24 md:w-24 lg:h-10 lg:w-10 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
-    shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
-    `,
+        `flex h-16 w-16 items-center justify-center rounded-full bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)] md:h-24 md:w-24 lg:h-10 lg:w-10`,
         className
       )}
       style={{
-        background: "rgb(2,0,36)",
+        background: 'rgb(2,0,36)',
         backgroundColor:
-          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 50%, rgba(93,108,111,1) 100%)",
+          'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 50%, rgba(93,108,111,1) 100%)',
       }}
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
 export const NodeIcon = ({ className }: { className?: string }) => {
   return (
@@ -344,8 +342,8 @@ export const NodeIcon = ({ className }: { className?: string }) => {
         </g>
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const SpringBoot = ({ className }: { className?: string }) => {
   return (
@@ -362,8 +360,8 @@ export const SpringBoot = ({ className }: { className?: string }) => {
         fill="#6db33f"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const Java = ({ className }: { className?: string }) => {
   return (
@@ -406,8 +404,8 @@ export const Java = ({ className }: { className?: string }) => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 export const PostgreSQLLogo = ({ className }: { className?: string }) => {
   return (
     // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
@@ -433,8 +431,8 @@ export const PostgreSQLLogo = ({ className }: { className?: string }) => {
         fill="#FFF"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const MongoDBLogo = ({ className }: { className?: string }) => {
   return (
@@ -475,5 +473,5 @@ export const MongoDBLogo = ({ className }: { className?: string }) => {
         fill="#47474a"
       />
     </svg>
-  );
-};
+  )
+}
