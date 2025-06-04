@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+import { Box, Lock, Search, Settings, Sparkles } from 'lucide-react'
 
-import { GlowingEffect } from "@/components/ui/GlowingEffect";
+import { GlowingEffect } from '@/components/ui/GlowingEffect'
 
 export function GlowingEffectGrid() {
   return (
@@ -42,14 +42,14 @@ export function GlowingEffectGrid() {
         description="I'm writing the code as I record this, no shit."
       />
     </ul>
-  );
+  )
 }
 
 interface GridItemProps {
-  area: string;
-  icon: React.ReactNode;
-  title: string;
-  description: React.ReactNode;
+  area: string
+  icon: React.ReactNode
+  title: string
+  description: React.ReactNode
 }
 
 const GridItem = ({ area, icon, title, description }: GridItemProps) => {
@@ -65,16 +65,16 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
           proximity={64}
           inactiveZone={0.01}
         />
-        <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+        <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] md:p-6">
           <div className="relative flex flex-1 flex-col justify-between gap-3">
             <div className="w-fit rounded-lg border border-gray-600 p-2">
               {icon}
             </div>
             <div className="space-y-3">
-              <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-black md:text-2xl/[1.875rem] dark:text-white">
+              <h3 className="-tracking-4 text-balance pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-black dark:text-white md:text-2xl/[1.875rem]">
                 {title}
               </h3>
-              <h2 className="font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
+              <h2 className="font-sans text-sm/[1.125rem] text-black dark:text-neutral-400 md:text-base/[1.375rem] [&_b]:md:font-semibold [&_strong]:md:font-semibold">
                 {description}
               </h2>
             </div>
@@ -82,5 +82,5 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}

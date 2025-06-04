@@ -1,48 +1,48 @@
-import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa";
+import Link from 'next/link'
+import { FaLocationArrow } from 'react-icons/fa'
 
-import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
+import { workExperience } from '@/data'
+import { Button } from './ui/MovingBorders'
 
 const Certificates = () => {
   return (
-    <div className="pt-40 pb-40 w-full">
+    <div className="w-full pb-40 pt-40">
       <h1 className="heading" id="knowledge">
-        <span className="text-white">Meus</span>{" "}
+        <span className="text-white">Meus</span>{' '}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
           Certificados
         </span>
       </h1>
 
-      <div className="mt-12 gap-10 grid grid-cols-1 lg:grid-cols-4 max-md:grid-cols-1">
-        {workExperience.map((card) => (
+      <div className="mt-12 grid grid-cols-1 gap-10 max-md:grid-cols-1 lg:grid-cols-4">
+        {workExperience.map(card => (
           <Link
             key={card.id}
             href={card.link}
             target="_blank"
             about="certificados"
-            className="grid lg:col-span-2 w-full"
+            className="grid w-full lg:col-span-2"
           >
             <Button
               key={card.id}
               duration={Math.floor(Math.random() * 10000 + 10000)}
               borderRadius="1.75rem"
-              className="text-white border-slate-800 h-[180px] p-5"
+              className="h-[180px] border-slate-800 p-5 text-white"
             >
               <div className="flex items-center justify-center gap-4 max-sm:gap-5">
                 <img
                   src={card.thumbnail}
                   alt={card.thumbnail}
-                  className="lg:w-32 md:w-20 w-16"
+                  className="w-16 md:w-20 lg:w-32"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold tracking-widest">
+                  <h1 className="text-start text-xl font-bold tracking-widest md:text-2xl">
                     {card.title}
                   </h1>
-                  <p className="text-start text-white-100 mt-3 font-semibold ">
+                  <p className="mt-3 text-start font-semibold text-white-100">
                     {card.desc}
                   </p>
-                  <p className="flex items-center lg:text-sm md:text-xs text-xs text-purple mt-3">
+                  <p className="mt-3 flex items-center text-xs text-purple md:text-xs lg:text-sm">
                     Verifique o Link
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
                   </p>
@@ -53,7 +53,7 @@ const Certificates = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Certificates;
+export default Certificates

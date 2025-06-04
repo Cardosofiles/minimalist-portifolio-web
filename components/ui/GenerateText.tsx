@@ -1,8 +1,8 @@
-"use client";
-import { motion, stagger, useAnimate } from "framer-motion";
-import { useEffect } from "react";
+'use client'
+import { motion, stagger, useAnimate } from 'framer-motion'
+import { useEffect } from 'react'
 
-import { cn } from "@/utils/cn";
+import { cn } from '@/utils/cn'
 
 export const GenerateText = ({
   words,
@@ -10,27 +10,27 @@ export const GenerateText = ({
   filter = true,
   duration = 0.5,
 }: {
-  words: string;
-  className?: string;
-  filter?: boolean;
-  duration?: number;
+  words: string
+  className?: string
+  filter?: boolean
+  duration?: number
 }) => {
-  const [scope, animate] = useAnimate();
-  const wordsArray = words.split(" ");
+  const [scope, animate] = useAnimate()
+  const wordsArray = words.split(' ')
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     animate(
-      "span",
+      'span',
       {
         opacity: 1,
-        filter: filter ? "blur(0px)" : "none",
+        filter: filter ? 'blur(0px)' : 'none',
       },
       {
         duration: duration ? duration : 1,
         delay: stagger(0.2),
       }
-    );
-  }, [scope.current]);
+    )
+  }, [scope.current])
 
   const renderWords = () => {
     return (
@@ -42,24 +42,24 @@ export const GenerateText = ({
               key={word + idx}
               className="opacity-0"
               style={{
-                filter: filter ? "blur(10px)" : "none",
+                filter: filter ? 'blur(10px)' : 'none',
               }}
             >
-              {word}{" "}
+              {word}{' '}
             </motion.span>
-          );
+          )
         })}
       </motion.div>
-    );
-  };
+    )
+  }
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn('font-bold', className)}>
       <div className="mt-4">
-        <div className="uppercase tracking-widest text-sm text-center text-blue-200 leading-snug ">
+        <div className="text-center text-sm uppercase leading-snug tracking-widest text-blue-200">
           {renderWords()}
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

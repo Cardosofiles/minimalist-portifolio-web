@@ -1,58 +1,53 @@
-"use client";
+'use client'
 
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow } from 'react-icons/fa'
 
-import { projects } from "@/data";
-import { PinContainer } from "./ui/3d-pin";
+import { projects } from '@/data'
+import { PinContainer } from './ui/3d-pin'
 
 export const RecentProjects = () => {
   return (
-    <div className="pt-40 pb-40" id="projects">
+    <div className="pb-40 pt-40" id="projects">
       <h1 className="heading">
-        <span className="text-white">Galeria dos</span>{" "}
+        <span className="text-white">Galeria dos</span>{' '}
         <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
           Projetos Recentes
         </span>
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className=" sm-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center 
-          justify-center sm:w-[570px] w-[80vw]"
+            className="sm-[41rem] flex h-[32rem] w-[80vw] items-center justify-center sm:w-[570px] lg:min-h-[32.5rem]"
           >
             <PinContainer title={link} href={link}>
-              <div
-                className="relative flex items-center justify-center sm:w-[570px] 
-              w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] lg:h-[32vh] mb-10"
-              >
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d] ">
-                  <img src={"/web-portifolio.png"} alt="bg-img" />
+              <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px] lg:h-[32vh]">
+                <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
+                  <img src={'/web-portifolio.png'} alt="bg-img" />
                 </div>
                 <img
                   src={img}
                   alt={title}
-                  className="z-10 w-full h-full object-cover absolute bottom-0"
+                  className="absolute bottom-0 z-10 h-full w-full object-cover"
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">
+              <h1 className="line-clamp-1 text-base font-bold text-white md:text-xl lg:text-2xl">
                 {title}
               </h1>
 
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-neutral-400">
+              <p className="line-clamp-2 text-sm font-light text-neutral-400 lg:text-xl lg:font-normal">
                 {des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="mb-3 mt-7 flex items-center justify-between">
                 <div className="flex items-center">
                   {iconLists.map((icon, index) => (
                     <div
                       // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                       key={index}
-                      className="border border-white/[0.2] rounded-full bg-black lg:w-10 
-                      lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -62,8 +57,8 @@ export const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-row items-center justify-center mr-2">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                <div className="mr-2 flex flex-row items-center justify-center">
+                  <p className="flex text-sm text-purple md:text-xs lg:text-xl">
                     Verifique o Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
@@ -74,5 +69,5 @@ export const RecentProjects = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}

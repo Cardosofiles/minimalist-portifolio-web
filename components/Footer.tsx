@@ -1,28 +1,28 @@
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow } from 'react-icons/fa'
 
-import { socialMedia } from "@/data";
-import MagicButton from "./ui/MagicButton";
+import { socialMedia } from '@/data'
+import MagicButton from './ui/MagicButton'
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-40  pb-10" id="contact">
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+    <footer className="w-full pb-10 pt-40" id="contact">
+      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
         <img
           src="/footer-grid.svg"
           alt="footer-img"
-          className="w-full h-full opacity-50"
+          className="h-full w-full opacity-50"
         />
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="tracking-widest text-xl text-center text-blue-200 heading lg:max-w-[45vw] ">
-          Pronto para levar seus{" "}
+        <h1 className="heading text-center text-xl tracking-widest text-blue-200 lg:max-w-[45vw]">
+          Pronto para levar seus{' '}
           <span className="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
             Websites
-          </span>{" "}
+          </span>{' '}
           ao proximo nível?
         </h1>
-        <p className="text-white-100 md:mt-10 my-5 text-center">
+        <p className="my-5 text-center text-white-100 md:mt-10">
           Entre em contato comigo, vamos trabalhar juntos para alcançar o
           sucesso.
         </p>
@@ -40,26 +40,26 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex space-y-5 mt-16 lg:mt-28 md:mb-5 md:flex-row flex-col justify-between items-center">
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
+      <div className="mt-16 flex flex-col items-center justify-between space-y-5 md:mb-5 md:flex-row lg:mt-28">
+        <div className="flex items-center gap-6 md:gap-3">
+          {socialMedia.map(info => (
             <a
               href={info.link}
               target="_blank"
               key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="saturate-180 flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border border-black-300 bg-black-200 bg-opacity-75 backdrop-blur-lg backdrop-filter"
               rel="noreferrer"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
             </a>
           ))}
         </div>
-        <p className="md:text-base text-sm md:mt-4 md:font-normal font-light text-white">
+        <p className="text-sm font-light text-white md:mt-4 md:text-base md:font-normal">
           Copyright © 2024 João Batista
         </p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

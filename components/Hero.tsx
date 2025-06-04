@@ -1,50 +1,44 @@
-import { FaMailBulk } from "react-icons/fa";
-import MagicButton from "./ui/MagicButton";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { FaMailBulk } from 'react-icons/fa'
+import MagicButton from './ui/MagicButton'
+import { Spotlight } from './ui/Spotlight'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
 
 const Hero = () => {
   return (
     <div className="pb-20 pt-36" id="home">
       <div>
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
           fill="white"
         />
         <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
+          className="left-full top-10 h-[80vh] w-[50vw]"
           fill="purple"
         />
         <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
+          className="left-full top-10 h-[80vh] w-[50vw]"
           fill="purple"
         />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div
-        className="h-screen w-full bg-black-100
-      dark:bg-grid-white/[0.06] bg-grid-white/[0.06] flex items-center justify-center absolute top-0 left-0"
-      >
-        <div
-          className="absolute pointer-events-none inset-0 flex items-center justify-center
-         bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        />
+      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-black-100 bg-grid-white/[0.06] dark:bg-grid-white/[0.06]">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-200 max-w-80">
+      <div className="relative z-10 my-20 flex justify-center">
+        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
+          <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-200">
             Projeto Dinâmico, Criado com a Magia do Next.js, Aceternity e Shadcn
             UI
           </h2>
 
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5x6 lg:text-6xl"
+            className="md:text-5x6 text-center text-[40px] lg:text-6xl"
             words="Transformando a Experiência do Usuário com Conceitos Modernos"
           />
 
-          <p className="text-center tracking-widest md:tracking-wider mb-4 text-lg md:text-lg lg:text-lg text-white">
+          <p className="mb-4 text-center text-lg tracking-widest text-white md:text-lg md:tracking-wider lg:text-lg">
             Desenvolvedor Full Stack
           </p>
 
@@ -76,7 +70,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

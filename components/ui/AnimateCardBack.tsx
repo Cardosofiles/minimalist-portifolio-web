@@ -14,7 +14,7 @@ export function CardDemoBack() {
       </CardSkeletonContainer>
       <CardTitle>Back-end</CardTitle>
       <CardDescription>
-        Análise de Dados, Automações de Tarefas e Armazenamento de Dados
+        Criação de API REST, Persistência de dados (CRUD) e Regras de Negócio.
       </CardDescription>
     </Card>
   );
