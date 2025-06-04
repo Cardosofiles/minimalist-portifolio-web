@@ -124,7 +124,7 @@ export const RecentProjects = () => {
 
                   <div className="mr-2 flex flex-row items-center justify-center">
                     <p className="flex text-sm text-purple md:text-xs lg:text-xl">
-                      Verifique o Repositório
+                      Acessar o Repositório
                     </p>
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
                   </div>
