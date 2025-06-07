@@ -20,7 +20,7 @@ export const RecentProjects = () => {
           Front-end
         </h3>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4 lg:gap-y-20">
           {projectsFrontEnd.map(({ id, title, des, img, iconLists, link }) => (
             <div
               key={id}

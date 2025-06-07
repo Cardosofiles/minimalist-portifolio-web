@@ -166,7 +166,13 @@ export const projectsBackEnd = [
     title: 'Gerenciador de Tarefas',
     des: 'Desenvolvido com Java, Spring Boot, Apache Maven, Docker e Ubuntu, este projeto visa apresentar meu currículo e certificados de forma acessível e organizada para recrutadores.',
     img: '/task-manager-home.png',
-    iconLists: ['/java-.svg', '/spring-boot.svg', '/postgresql.svg', '/dock.svg', '/ubuntu-4.svg'],
+    iconLists: [
+      '/java-.svg',
+      '/spring-boot.svg',
+      '/postgresql.svg',
+      '/dock.svg',
+      '/ubuntu-4.svg',
+    ],
     link: 'https://github.com/Cardosofiles/task-manager-server',
   },
   {
@@ -174,7 +180,13 @@ export const projectsBackEnd = [
     title: 'Simulador Fluxo de Caixa',
     des: 'Desenvolvido com Java, este projeto visa apresentar meu currículo e certificados de forma acessível e organizada para recrutadores.',
     img: 'task-manager-home.png',
-    iconLists: ['/java-.svg', '/spring-boot.svg', '/postgresql.svg', '/dock.svg', '/ubuntu-4.svg'],
+    iconLists: [
+      '/java-.svg',
+      '/spring-boot.svg',
+      '/postgresql.svg',
+      '/dock.svg',
+      '/ubuntu-4.svg',
+    ],
     link: 'https://github.com/Cardosofiles/checking-account-server',
   },
 ]
@@ -283,7 +295,7 @@ export const socialMedia = [
   {
     id: 1,
     img: '/link.svg',
-    link: 'https://www.linkedin.com/in/jo%C3%A3o-batista-dev-front-end/',
+    link: 'https://www.linkedin.com/in/joaobatista-dev/',
   },
   {
     id: 2,
