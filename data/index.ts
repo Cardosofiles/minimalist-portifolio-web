@@ -72,11 +72,11 @@ export const gridItems = [
 export const projectsFrontEnd = [
   {
     id: 1,
-    title: 'Portifólio WEB',
-    des: 'Desenvolvido com HTML, CSS, jQuery e PHP, este projeto visa apresentar meu currículo e certificados de forma acessível e organizada para recrutadores.',
-    img: '/web-portifolio.png',
-    iconLists: ['/html.svg', '/css.svg', '/js.svg', '/three.svg', '/fm.svg'],
-    link: 'https://newportifoliocardosofiles.netlify.app/',
+    title: 'Marvel Developer',
+    des: 'Desenvolvido com TailwindCSS, TypeScript, Next, Axios e TanStack-Query, este projeto visa apresentar o uso da API da Marvel Comics©.',
+    img: '/marvel-home.png',
+    iconLists: ['/ts.svg', 're.svg', '/next.svg', '/tail.svg', '/radix.svg'],
+    link: 'https://marvel-comics-client.vercel.app/',
   },
   {
     id: 2,
