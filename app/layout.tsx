@@ -1,7 +1,8 @@
+import { QueryProvider } from '@/components/ui/query-provider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from '../components/ui/theme-provider'
 import './globals.css'
-import { ThemeProvider } from './provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <QueryProvider>{children}</QueryProvider>
         </ThemeProvider>
       </body>
     </html>

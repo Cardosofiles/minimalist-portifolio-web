@@ -1,6 +1,10 @@
 // utils/api.ts
+import type {
+  GetFollowersGithub,
+  GetFollowersTestemunhal,
+  GetRepositoriesGithub,
+} from '@/types/request-types'
 import axios from 'axios'
-import type { GetRepositoriesGithub } from './request-types'
 
 const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN || process.env.GITHUB_TOKEN
 
@@ -23,5 +27,17 @@ export const getRepositoryGithub = async (): Promise<
   GetRepositoriesGithub[]
 > => {
   const { data } = await api.get('users/Cardosofiles/repos')
+  return data
+}
+
+export const getFollowersGithub = async (): Promise<GetFollowersGithub[]> => {
+  const { data } = await api.get('users/Cardosofiles/followers')
+  return data
+}
+
+export const GetFollowersTestemunhalQuery = async (): Promise<
+  GetFollowersTestemunhal[]
+> => {
+  const { data } = await api.get('users/Cardosofiles/followers')
   return data
 }

@@ -6,7 +6,7 @@ import Knowledge from '@/components/Knowledge'
 import Languages from '@/components/Languages'
 import RecentAchievements from '@/components/RecentAchievements'
 import { RecentProjects } from '@/components/RecentProjects'
-import { CardsCarouselRepositories } from '@/components/ui/CardCarouselRepository'
+import { CardCarouselRepositories } from '@/components/ui/CardCarouselRepository'
 import { FloatingNav } from '@/components/ui/FloatingNav'
 import { navItems } from '@/data'
 
@@ -22,7 +22,7 @@ export default function Home() {
         <Certificates />
         <Languages />
         <RecentAchievements />
-        <CardsCarouselRepositories />
+        <CardCarouselRepositories />
         <Footer />
       </div>
     </main>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FaLocationArrow } from 'react-icons/fa'
 
 import { socialMedia } from '@/data'

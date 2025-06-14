@@ -1,4 +1,4 @@
-'use client'
+/* eslint-disable @next/next/no-img-element */
 
 import { FaLocationArrow } from 'react-icons/fa'
 

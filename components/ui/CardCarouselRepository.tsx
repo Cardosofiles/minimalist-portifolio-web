@@ -1,36 +1,15 @@
 'use client'
 
 import { IconHandFinger } from '@tabler/icons-react'
-import { QueryClientProvider } from '@tanstack/react-query'
 import { FaLocationArrow } from 'react-icons/fa'
 
 import { Card, Carousel } from '@/components/ui/CardCarousel'
 import { images } from '@/data'
 import { useRepository } from '@/hooks/useRepository'
-import { queryClient } from '@/utils/queryClient'
 import type { Key } from 'react'
 import { Skeleton } from './Skeleton'
 
-type Repo = {
-  id: number
-  name: string
-  description: string | null
-  html_url: string
-  language: string | null
-  owner: {
-    avatar_url: string
-  }
-}
-
-export function CardsCarouselRepositories() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <QueryData />
-    </QueryClientProvider>
-  )
-}
-
-function QueryData() {
+export function CardCarouselRepositories() {
   const { data: repo, isPending, error } = useRepository()
 
   if (isPending) {
