@@ -74,9 +74,9 @@ export const projectsFrontEnd = [
     id: 1,
     title: 'Marvel Developer',
     des: 'Desenvolvido com TailwindCSS, TypeScript, Next, Axios e TanStack-Query, este projeto visa apresentar o uso da API da Marvel Comics©.',
-    img: '/marvel-home.png',
+    img: '/marvel-community.png',
     iconLists: ['/ts.svg', 're.svg', '/next.svg', '/tail.svg', '/radix.svg'],
-    link: 'https://marvel-comics-client.vercel.app/',
+    link: 'https://marvel-community-client.vercel.app/',
   },
   {
     id: 2,
