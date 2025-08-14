@@ -1,42 +1,88 @@
-# Meu Portfólio Pessoal
+<h1 align="center">Minimalist Portfólio 🚀</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+</p>
 
-Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e experiências na área de desenvolvimento web. Sinta-se à vontade para explorar e conhecer mais sobre o meu trabalho.
+<p align="center">
+  Um portfólio minimalista, elegante e responsivo para desenvolvedores modernos.
+</p>
 
-## Tecnologias Utilizadas
+---
 
-Este portfólio foi construído utilizando as seguintes tecnologias:
+## ✨ Visão Geral
 
-- **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript, melhorando a manutenção e a escalabilidade do código.
-- **React**: Biblioteca JavaScript para construir interfaces de usuário (UIs) de forma declarativa e eficiente.
-- **Next.js**: Framework React que oferece recursos como renderização do lado do servidor, geração estática de sites e otimização de desempenho.
-- **Tailwind CSS**: Framework CSS utilitário que permite criar layouts responsivos de maneira rápida e customizável.
-- **ShadCN UI**: Conjunto de componentes UI altamente customizáveis para React, facilitando a criação de interfaces consistentes e elegantes.
-- **Aceterity UI**: Biblioteca de componentes que oferece estilos modernos e acessíveis para construir aplicações web.
-- **Git**: Sistema de controle de versão distribuído, essencial para o gerenciamento de código-fonte.
-- **GitHub**: Plataforma de hospedagem de código-fonte, onde este projeto está versionado e disponível para colaboração.
+Este projeto é um portfólio pessoal desenvolvido com foco em design minimalista, performance e acessibilidade. Ideal para apresentar suas habilidades, projetos e experiências de forma clara e impactante.
 
-## Image Home Page - Hero
+## 🖥️ Tecnologias Utilizadas
 
-![Screenshot do Portfólio](/public//minimalist-print.png)
+- **Next.js** — Framework React para aplicações modernas e performáticas
+- **React** — Biblioteca para interfaces de usuário reativas
+- **TypeScript** — Tipagem estática para maior robustez
+- **CSS Modules / TailwindCSS** — Estilização modular e utilitária
+- **Vercel** — Deploy rápido e fácil (opcional)
 
-_Acima está uma captura de tela do meu portfólio, destacando a interface e o design criados com as tecnologias mencionadas._
+## ⚡ Recursos
 
-## Como Executar Localmente
+- Design minimalista e elegante
+- Totalmente responsivo (mobile-first)
+- Seção de projetos com destaques
+- Sobre mim e skills técnicas
+- Animações suaves e interativas
+- SEO otimizado
+- Fácil personalização
 
-Se você deseja executar este portfólio localmente, siga os passos abaixo:
+## 🚀 Como Rodar Localmente
 
-1. Clone o repositório:
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+```bash
+# Clone o repositório
+git clone https://github.com/Cardosofiles/minimalist-portifolio.git
 
-2. Navegue até o diretório do projeto:
-   cd seu-repositorio
+# Acesse a pasta do projeto
+cd minimalist-portifolio
 
-3. Intale as dependências:
-   npm install ou yarn install
+# Instale as dependências
+npm install
 
-4. Inicie o servidor de desenvolvimento:
-   npm run dev ou yarn dev
+# Rode o servidor de desenvolvimento
+npm run dev
 
-5. Abra http://localhost:3000 no seu navegador para ver o portfólio.
+# Acesse em http://localhost:3000
+```
 
-Este `README.md` apresenta o portfólio, destaca as tecnologias utilizadas e inclui uma captura de tela referenciada do repositório local. Certifique-se de ajustar os links e informações conforme necessário.
+## 🛠️ Personalização
+
+- Edite os arquivos em `/components` e `/data` para atualizar informações pessoais, projetos e redes sociais.
+- Modifique estilos em `/styles` conforme sua identidade visual.
+
+## 🌐 Deploy
+
+Recomenda-se deploy na [Vercel](https://vercel.com/) para integração perfeita com Next.js.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar!
+
+---
+
+## 📫 Contato
+
+<div align="center">
+
+<a href="mailto:cardosofiles@outlook.com">
+  <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email"/>
+</a>
+<a href="https://www.linkedin.com/in/joaobatista-dev/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://github.com/Cardosofiles" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+<a href="https://cardosofiles.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfólio-222222?style=for-the-badge&logo=about.me&logoColor=white" alt="Portfólio"/>
+</a>
+
+</div>

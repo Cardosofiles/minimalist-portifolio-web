@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { FaLocationArrow } from 'react-icons/fa'
 
 import { socialMedia } from '@/data'
+import { IconForms } from '@tabler/icons-react'
+import { ContactForm } from './ui/ContactForm'
 import MagicButton from './ui/MagicButton'
+import { Popover, PopoverContent, PopoverTrigger } from './ui/Popover'
 
 const Footer = () => {
   return (
@@ -28,7 +30,20 @@ const Footer = () => {
           sucesso.
         </p>
 
-        <a
+        {/* <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <MagicButton
+              title="Formulário"
+              icon={<IconForms />}
+              position="right"
+            />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="center" className="mb-2 bg-black-100">
+            <ContactForm />
+          </DropdownMenuContent>
+        </DropdownMenu> */}
+
+        {/* <a
           className="flex items-center justify-center"
           href="mailto:cardosofiles@outlook.com"
         >
@@ -38,7 +53,23 @@ const Footer = () => {
             position="right"
             otherClasses="flex items-center"
           />
-        </a>
+        </a> */}
+
+        <Popover>
+          <PopoverTrigger asChild>
+            <MagicButton
+              title="Formulário"
+              icon={<IconForms />}
+              position="right"
+            />
+          </PopoverTrigger>
+          <PopoverContent
+            align="center"
+            className="mb-4 w-96 max-w-3xl bg-black-100 lg:w-11/12"
+          >
+            <ContactForm />
+          </PopoverContent>
+        </Popover>
       </div>
 
       <div className="mt-16 flex flex-col items-center justify-between space-y-5 md:mb-5 md:flex-row lg:mt-28">

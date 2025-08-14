@@ -1,7 +1,7 @@
 import { QueryProvider } from '@/components/ui/query-provider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { ThemeProvider } from '../components/ui/theme-provider'
+import { ThemeProvider } from '../components/ui/ThemeProvider'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
