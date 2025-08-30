@@ -88,20 +88,6 @@ export const projectsFrontEnd = [
   },
   {
     id: 3,
-    title: 'Social Feed',
-    des: 'Projeto para implementar os conceitos fundamentais do ReactJS, sendo eles, estado, propriedade e componente.',
-    img: '/home-page.png',
-    iconLists: [
-      '/re.svg',
-      '/css.svg',
-      '/ts.svg',
-      '/vitejs.svg',
-      '/prettier.svg',
-    ],
-    link: 'https://social-feed-reactjs.vercel.app/',
-  },
-  {
-    id: 4,
     title: 'Jogo da Memória',
     des: 'Criado com HTML, CSS e JavaScript, afim de Praticar a Lógica de Programação',
     img: '/memory-game.png',
@@ -115,21 +101,7 @@ export const projectsFrontEnd = [
     link: 'https://memorygamecardosofiles.netlify.app/',
   },
   {
-    id: 5,
-    title: 'ToDo List | React',
-    des: 'Criado TypeScript, React, Vite e CSS Modules, para praticar os fundamentos do React.',
-    img: '/todo-list.png',
-    iconLists: [
-      '/ts.svg',
-      're.svg',
-      '/vitejs.svg',
-      '/sass.svg',
-      '/prettier.svg',
-    ],
-    link: 'https://todo-list-react-red-eight.vercel.app/',
-  },
-  {
-    id: 6,
+    id: 4,
     title: 'Técnica de Estudo Pomodoro',
     des: 'Criado TypeScript, React, Vite e Styled Component, aprofundando no hooks do React',
     img: '/pomodoro-technique.png',
@@ -143,7 +115,7 @@ export const projectsFrontEnd = [
     link: 'https://pomodoro-technique-orcin.vercel.app/',
   },
   {
-    id: 7,
+    id: 5,
     title: 'Feature Shadcn UI',
     des: 'Criado TypeScript, Next.js Latest, TailwindCSS v4.0, Design moderno e minimalista',
     img: '/shadcn-charts-web.png',
@@ -151,7 +123,7 @@ export const projectsFrontEnd = [
     link: 'https://shadcn-charts-web.vercel.app/',
   },
   {
-    id: 8,
+    id: 6,
     title: 'Gráficos Dinâmicos',
     des: 'Criado TypeScript, Next.js Latest, TailwindCSS v4.0, Design moderno e minimalista',
     img: '/charts-dinamic.png',
